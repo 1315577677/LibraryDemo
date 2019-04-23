@@ -1,0 +1,91 @@
+.welcome{
+	background-color: #F5F7FE;
+	width: 100%;
+	height: 100%;
+	padding-top: 15%;
+	padding-left: 35%;
+}
+
+.loginform{
+
+	height:250px;
+	width:410px;
+	border-radius: 7px;
+	padding: 25px;
+  	background-color: #353A3F;
+}
+
+.Chineseword{
+	position:absolute;
+	margin-top:125px;
+	margin-bottom:0px;
+	margin-right:0px;
+	margin-left:60px;
+	font-size:40px;
+	color:white;
+}
+
+.Englishword{
+	position:absolute;
+	margin-top:480px;
+	margin-bottom:0px;
+	margin-right:0px;
+	margin-left:60px;
+	font-size:60px;
+	color:white;
+}
+
+.errorsubmit{
+	position:absolute;
+	margin-top:5px;
+	margin-bottom:0px;
+	margin-right:0px;
+	margin-left:90px;
+	width:400px;
+	color:red;
+}
+
+#loginbutton{
+	width:335px;
+}
+
+#rightsize{
+	align:right;
+	color:white;
+	
+}
+
+#usernameinput{
+	width:340px;
+}
+
+#passwordinput{
+	width:340px;
+}
+
+#labellogin{
+	position:absolute;
+	margin-left:95px;
+	margin-top:-10px;
+	text-align:center;
+	width:140px;
+	color:white;
+	font-size:20px;
+}
+
+#nva{
+	margin: 0 auto;
+}
+#logo{
+	color: #e7e8ea;
+	background-color:#444444;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+}
+
+
+li{
+	padding-left: 50px;
+	padding-right: 50px;
+}

@@ -31,7 +31,7 @@
 <table class="table">
     <thead>
     <tr>
-        <th>读者ID</th>
+        <th>读者用户名</th>
         <th>读者姓名</th>
         <th>读者性别</th>
         <th>读者当前状态</th>
@@ -62,9 +62,10 @@
         <td><%=status%></td>
         <td><%=reader.getMail()%></td>
         <td><%=reader.getTel()%></td>
-        <td><%=reader.getGrade()%>年级<%=reader.getClassnum()%>班</td>
-        <td><a href="ReaderAction?action=SetBlackList&id=<%=reader.getUsername()%>&edit=<%=edit%>"><%=edit%></a></td>
-    </tr>
+        <td><%=reader.getGrade()%>系<%=reader.getClassnum()%>班</td>
+        <td><a href="ReaderAction?action=SetBlackList&id=<%=reader.getUsername()%>&edit=<%=edit%>"><%=edit%></a><a href="ReaderAction?action=readerdelete&id=<%=reader.getUsername()%>"  style="color: red">删除</a></td>
+
+    </tr
     <%
             }
         }

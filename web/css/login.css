@@ -8,7 +8,6 @@
 
 .loginform{
 
-	height:250px;
 	width:410px;
 	border-radius: 7px;
 	padding: 25px;
@@ -48,6 +47,7 @@
 #loginbutton{
 	width:335px;
 }
+
 
 #rightsize{
 	align:right;

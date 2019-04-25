@@ -26,6 +26,7 @@
 %>
 <body>
 <jsp:include page="nav.html"/>
+<div>
 <div class="borrowinfo">
     <div class="title">
         书本借出记录登记表
@@ -70,10 +71,12 @@
             </select>
         </div>
         <div class="button">
-            <button type="submit" class="btn btn-success">提交</button>
+            <button type="submit" class="btn btn-success " name="over" value="1">提交</button>
             <button type="reset" class="btn btn-default">重填</button>
+            <button type="submit" class="btn btn-default" name="over" value="0" id="send">继续借书</button>
         </div>
     </form>
+</div>
 </div>
 </body>
 </html> 

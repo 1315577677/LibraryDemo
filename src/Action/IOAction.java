@@ -1,5 +1,7 @@
 package Action;
 
+import Entity.Book;
+import com.dbconn.entity.DBBook;
 import com.dbconn.entity.DBIO;
 import Entity.Log;
 
@@ -9,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -32,6 +35,7 @@ public class IOAction extends HttpServlet {
     }
 
     protected void borrow(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        String next = request.getParameter("over");
         DBIO ioDao = new DBIO();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日 HH时mm分ss秒");
         Date date = new Date();
@@ -40,7 +44,10 @@ public class IOAction extends HttpServlet {
         String bookid = request.getParameter("bookid");
         int borrowday = Integer.parseInt(request.getParameter("borrowday"));
         ioDao.borrow(bookid, readerid, time, borrowday);
-        this.getlog(request,response);
+        if(next.equals("0"))
+            request.getRequestDispatcher("/borrow.jsp").forward(request, response);
+        else
+            this.getlog(request,response);
     }
 
     protected void getlog(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
@@ -60,9 +67,16 @@ public class IOAction extends HttpServlet {
         String readerId = request.getParameter("ReaderId");
         String borrowtime = request.getParameter("borrowtime");
         ioDao.ReturnBook(bookid, readerId, borrowtime, Returntime);
-        this.getlog(request,response);
+        this.GetBorrowListById(request,response);
     }
-    
-    
-    
+    protected void GetBorrowListById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        String id = request.getParameter("ReaderId");
+        DBIO ioDao = new DBIO();
+        ArrayList<Log> loglist = ioDao.QueryBorrowNumByReaderid(id);
+        HttpSession session = request.getSession();
+        session.setAttribute("loglist", loglist);
+        request.getRequestDispatcher("/borrowlist.jsp").forward(request,response);
+    }
+
+
 }

@@ -7,9 +7,9 @@ public class Reader {
     private String sex;
     private int status;
     private String mail;
-    private int grade;
+    private String grade;
     private String tel;
-    private int classnum;
+    private String classnum;
     private int borrow;
 
     public Reader() {
@@ -79,19 +79,19 @@ public class Reader {
         this.borrow = borrow;
     }
     
-    public int getGrade() {
+    public String getGrade() {
         return grade;
     }
 
-    public void setGrade(int grade) {
+    public void setGrade(String grade) {
         this.grade = grade;
     }
 
-    public int getClassnum() {
+    public String getClassnum() {
         return classnum;
     }
 
-    public void setClassnum(int classnum) {
+    public void setClassnum(String classnum) {
         this.classnum = classnum;
     }
 }

@@ -1,5 +1,7 @@
 package Action;
 
+import Entity.Reader;
+import com.dbconn.entity.DBReader;
 import com.dbconn.entity.DBUser;
 import Entity.User;
 
@@ -12,12 +14,17 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class LoginAction extends HttpServlet {
+    DBReader rdao = new DBReader();
     DBUser udao = new DBUser();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
         if (action.equals("login")) {
             this.login(request, response);
+        }
+        else if(action.equals("login1")){
+            this.login1(request,response);
+
         }
         else if(action.equals("logout")){
             this.logout(request, response);
@@ -40,6 +47,25 @@ public class LoginAction extends HttpServlet {
         if(result.equals("true")){
             session.setAttribute("adminname", user.getName());
             request.getRequestDispatcher("/main.jsp").forward(request, response);
+        }
+        else{
+            out.write(result);
+        }
+    }
+    private void login1(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String username = null;
+        String password = null;
+        PrintWriter out = response.getWriter();
+        HttpSession session = request.getSession();
+        username = request.getParameter("username");
+        password = request.getParameter("password");
+        Reader reader = new Reader();
+        reader.setUsername(username);
+        reader.setPassword(password);
+        String result = rdao.login(reader);
+        if(result.equals("true")){
+            session.setAttribute("adminname", reader.getName());
+            request.getRequestDispatcher("/nav_s.html").forward(request, response);
         }
         else{
             out.write(result);

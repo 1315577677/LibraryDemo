@@ -117,6 +117,22 @@ public class DBIO extends DBConnect{
         }
         return  null;
     }
+    public boolean checkUserById(String ID){
+        PreparedStatement pst = null;
+        try {
+            Connection conn = super.getConnection();
+            String sql ="SELECT complete FROM iolog WHERE readerid=? and complete=0";
+            pst=conn.prepareStatement(sql);
+            pst.setString(1,ID);
+            ResultSet RS=pst.executeQuery();
+            while (RS.next()){
+                return false;
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return true;
+    }
     
     public void ReturnBook(String bookid, String readerid, String borrowtime, String returntime){
         int i = 0;
@@ -130,7 +146,7 @@ public class DBIO extends DBConnect{
             pst.setInt(3, -1);
             pst.setString(4, borrowtime);
             i = pst.executeUpdate();
-            sql = "INSERT INTO iolog (bookid, readerid, service, borrowtime,complete)VALUES(?, ?, ?, ?, ?)";
+            sql = "INSERT INTO iolog (bookid, readerid, service, borrowtime,complete)VALUES(?, ?, ?, ?,?)";
             pst = conn.prepareStatement(sql);
             pst.setString(1, bookid);
             pst.setString(2, readerid);

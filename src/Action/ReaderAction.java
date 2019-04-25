@@ -6,10 +6,7 @@ import com.dbconn.entity.DBReader;
 import Entity.Reader;
 
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import javax.servlet.http.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -17,10 +14,13 @@ import java.util.ArrayList;
 
 public class ReaderAction extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String action = request.getParameter("action");
+        doGet(request, response);
+    }
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
-        response.setContentType("text/html; charset=utf-8");
+        String action = request.getParameter("action");
         if(action.equals("QueryReaderById")) {
             this.QueryReaderById(request, response);
         }
@@ -33,10 +33,13 @@ public class ReaderAction extends HttpServlet {
         else if(action.equals("SetBlackList")){
             this.SetBlackList(request, response);
         }
-    }
+        else if(action.equals("addreader")){
+            this.addreader(request, response);
+        }
+        else if(action.equals("readerdelete")){
+            this.readerdelete(request,response);
+        }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request, response);
     }
     
     protected void QueryReaderById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
@@ -78,4 +81,46 @@ public class ReaderAction extends HttpServlet {
         }
         this.GetAllReader(request, response);
     }
+    private void addreader(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        String next = request.getParameter("over");
+        DBReader bdao = new DBReader();
+        Reader reader = new Reader();
+
+            reader.setUsername(request.getParameter("username"));
+
+            reader.setPassword(request.getParameter("password"));
+
+            reader.setName(request.getParameter("name"));
+
+            reader.setSex(request.getParameter("sex"));
+
+            reader.setMail(request.getParameter("mail"));
+
+            reader.setTel(request.getParameter("tel"));
+
+            reader.setGrade(request.getParameter("grade"));
+
+            reader.setClassnum(request.getParameter("classnum"));
+
+            bdao.addreader(reader);
+        if(next.equals("0"))
+            request.getRequestDispatcher("/AddReader.jsp").forward(request, response);
+        else
+            this.GetAllReader(request,response);
+    }
+    private void readerdelete(HttpServletRequest request,HttpServletResponse response)throws ServletException, IOException{
+        DBIO io =new DBIO();
+        if(io.checkUserById(request.getParameter("id"))){
+            DBReader reader = new DBReader();
+            reader.DeleteById(request.getParameter("id"));
+        }else{
+            Cookie cookie = new Cookie("spot","该学生书本未还完无法删除");
+            response.addCookie(cookie);
+        }
+
+
+        this.GetAllReader(request,response);
+    }
+
+
 }

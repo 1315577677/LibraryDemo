@@ -24,8 +24,8 @@ public class DBReader extends DBConnect{
                 reader.setName(rs.getString("name"));
                 reader.setSex(rs.getString("sex"));
                 reader.setStatus(rs.getInt("status"));
-                reader.setGrade(rs.getInt("grade"));
-                reader.setClassnum(rs.getInt("classnum"));
+                reader.setGrade(rs.getString("grade"));
+                reader.setClassnum(rs.getString("classnum"));
                 reader.setBorrow(ioDao.QueryBorrowNumByReaderid(id).size());
             }
             return reader;
@@ -34,7 +34,33 @@ public class DBReader extends DBConnect{
         }
         return null;
     }
-    
+    public String login(Reader u){
+        try {
+            Connection conn = super.getConnection();
+            String sql = "SELECT password,name FROM reader WHERE username=?";
+            PreparedStatement pst = null;
+            ResultSet rs = null;
+            pst = conn.prepareStatement(sql);
+            pst.setString(1, u.getUsername());
+            rs = pst.executeQuery();
+            if (rs.next()) {
+                if (u.getPassword().equals(rs.getString("password"))){
+                    u.setName(rs.getString("name"));
+                    return "true";
+                }
+                else{
+                    return "false";
+                }
+            }
+            else{
+                return "false";
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     public ArrayList<Reader> GetAllReader(){
         ArrayList<Reader> ReaderList = new ArrayList<>();
         Connection conn = null;
@@ -53,8 +79,8 @@ public class DBReader extends DBConnect{
                 reader.setSex(rs.getString("sex"));
                 reader.setStatus(rs.getInt("status"));
                 reader.setMail(rs.getString("mail"));
-                reader.setGrade(rs.getInt("grade"));
-                reader.setClassnum(rs.getInt("classnum"));
+                reader.setGrade(rs.getString("grade"));
+                reader.setClassnum(rs.getString("classnum"));
                 reader.setTel(rs.getString("tel"));
                 ReaderList.add(reader);
             }
@@ -83,5 +109,40 @@ public class DBReader extends DBConnect{
             e.printStackTrace();
         }
 
+    }
+    public void addreader(Reader reader){
+        try {
+            int i = 0;
+            Connection conn = super.getConnection();
+            PreparedStatement pst = null;
+            String sql = "insert into reader (username, password, name, sex, status, mail, tel, grade, classnum)values(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            pst = conn.prepareStatement(sql);
+            pst.setString(1, reader.getUsername());
+            pst.setString(2, reader.getPassword());
+            pst.setString(3, reader.getName());
+            pst.setString(4, reader.getSex());
+            pst.setInt(5, 1);
+            pst.setString(6, reader.getMail());
+            pst.setString(7, reader.getTel());
+            pst.setString(8, reader.getGrade());
+            pst.setString(9, reader.getClassnum());
+            i = pst.executeUpdate();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    public void DeleteById(String s){
+        try {
+            int i = 0;
+            Connection conn = super.getConnection();
+            PreparedStatement pst = null;
+            String sql = "DELETE FROM reader WHERE  username=?";
+            pst = conn.prepareStatement(sql);
+            pst.setString(1,s);
+            i = pst.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

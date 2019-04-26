@@ -25,7 +25,7 @@
 <head>
     <title>读者列表</title>
 </head>
-<body>
+<body style="background-color:#F0F0F0">
 <jsp:include page="nav.html"/>
 
 <table class="table">

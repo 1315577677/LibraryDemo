@@ -14,30 +14,28 @@
 <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 <html>
 <head>
-    <title>管理员登录</title>
+    <title>学生登录</title>
 </head>
-<body>
-<%
-    request.setCharacterEncoding("utf-8");
-    if(session.getAttribute("adminname") != null && session.getAttribute("logout") == null){
-        response.sendRedirect("/Library/main.jsp");
-    }
-%>
-    <div class="welcome">
+<body style="background-color:#F0F0F0">
+<div class="welcome">
 
-        <div class="loginform">
-            <div>
-                <span id="labellogin">图书馆系统登录</span><br>
+    <div class="loginform1">
+        <div>
+            <span id="labellogin">学生登录</span><br>
+            <form action="LoginAction?action=login1" method="post">
                 <div class="form-group">
                     <input type="text" class="form-control" id="usernameinput" name="username" placeholder="用户名 "/>
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control" id="passwordinput" name="password" placeholder="密码"/>
                 </div>
-                <button id="loginbutton" class="btn btn-primary" onclick="logincheck()">登录</button>
-                <span class="errorsubmit" id="checkinfo"></span>
-             </div>
+                <input type="submit" id="loginbutton" class="btn btn-primary" value="登录">
+            </form>
+            <div class="errorsubmit"></div>
+            <span id="resiger">没有账号？<a style="color:#007bff" href="ReaderResiger.jsp">注册</a></span>
+            <span><a style="color: gray" href="damin.jsp">我是管理员</a></span>
         </div>
     </div>
+</div>
 </body>
 </html>

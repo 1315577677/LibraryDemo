@@ -10,7 +10,7 @@
 <head>
     <title>书本添加确认</title>
 </head>
-<body>
+<body style="background-color:#F0F0F0">
 <jsp:include page="nav.html"/>
 <%
     request.setCharacterEncoding("utf-8");

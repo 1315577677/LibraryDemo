@@ -1,11 +1,5 @@
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="Entity.Log" %><%--
-  Created by IntelliJ IDEA.
-  User: Creams
-  Date: 2018/1/18
-  Time: 17:06
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="Entity.Log" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
 <script src="${pageContext.request.contextPath}/js/jquery-3.2.1.min.js"></script>
@@ -21,7 +15,7 @@
         response.sendRedirect("/Library/index.jsp");
     }
 %>
-<body>
+<body style="background-color:#F0F0F0">
 <jsp:include page="nav.html"/>
 <table class="table">
     <thead>

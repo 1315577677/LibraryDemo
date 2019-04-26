@@ -15,7 +15,7 @@
 <head>
     <title>图书借进归还日志</title>
 </head>
-<body>
+<body style="background-color:#F0F0F0">
 <%
     request.setCharacterEncoding("utf-8");
     if(session.getAttribute("adminname") == null){

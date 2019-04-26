@@ -37,5 +37,16 @@
         <servlet-name>IOAction</servlet-name>
         <url-pattern>/IOAction</url-pattern>
     </servlet-mapping>
-
+    <servlet>
+        <servlet-name>Resiger</servlet-name>
+        <servlet-class>Action.Resiger</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Resiger</servlet-name>
+        <url-pattern>/Resiger</url-pattern>
+    </servlet-mapping>
+    <mime-mapping>
+        <extension>html</extension>
+        <mime-type>text/html;charset=utf-8</mime-type>
+    </mime-mapping>
 </web-app>

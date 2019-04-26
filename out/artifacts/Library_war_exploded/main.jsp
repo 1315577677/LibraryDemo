@@ -17,7 +17,7 @@
 <head>
     <title>登录成功</title>
 </head>
-<body>
+<body style="background-color:#F0F0F0">
 <%
     request.setCharacterEncoding("utf-8");
     if(session.getAttribute("adminname") == null){
@@ -26,7 +26,7 @@
 %>
 <jsp:include page="nav.html"/>
 <div style="padding-top: 16%;text-align: center;">
-    <h1>Welcome to CDUSEC library </h1>
+    <h1>Welcome to CDUSEC online library </h1>
 </div>
 </div>
 </body>

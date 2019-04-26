@@ -12,6 +12,40 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DBBook extends DBConnect {
+    public ArrayList<Book> serbook(String bookname){
+        ArrayList<Book> booklist = new ArrayList<>();
+        DBIO ioDao = new DBIO();
+        PreparedStatement pst = null;
+        ResultSet rs = null;
+        try {
+            Connection conn = super.getConnection();
+            String sql = "SELECT * FROM Book WHERE bookname like ?";
+            pst = conn.prepareStatement(sql);
+            pst.setString(1,"%"+bookname+"%");
+            rs = pst.executeQuery();
+            while (rs.next()) {
+                Book book = new Book();
+                book.setId(rs.getString("id"));
+                book.setName(rs.getString("bookname"));
+                book.setAuthor(rs.getString("author"));
+                book.setPublisher(rs.getString("publisher"));
+                book.setPrice(rs.getInt("price"));
+                book.setCategory(rs.getString("category"));
+                book.setStore(rs.getInt("store"));
+                book.setLend(ioDao.QueryBookNumById(book.getId()));
+                book.setRemain(book.getStore() - book.getLend());
+                book.setLocation(rs.getString("location"));
+                booklist.add(book);
+            }
+            return booklist;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return booklist;
+    }
+
+
+
     public ArrayList<Book> getAllBook(){
         ArrayList<Book> booklist = new ArrayList<>();
         DBIO ioDao = new DBIO();

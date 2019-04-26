@@ -24,7 +24,7 @@
         response.sendRedirect("/Library/index.jsp");
     }
 %>
-<body>
+<body style="background-color:#F0F0F0">
 <jsp:include page="nav.html"/>
 <div>
 <div class="borrowinfo">

@@ -23,7 +23,7 @@
 <head>
     <title>图书编辑</title>
 </head>
-<body>
+<body style="background-color:#F0F0F0">
 <h1 align="center">欢迎进入图书馆管理系统</h1>
 <jsp:include page="nav.html"/>
 <%

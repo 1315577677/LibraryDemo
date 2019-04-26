@@ -18,6 +18,8 @@ public class LoginAction extends HttpServlet {
     DBUser udao = new DBUser();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
+        response.setCharacterEncoding("utf-8");
         String action = request.getParameter("action");
         if (action.equals("login")) {
             this.login(request, response);
@@ -60,15 +62,13 @@ public class LoginAction extends HttpServlet {
         username = request.getParameter("username");
         password = request.getParameter("password");
         Reader reader = new Reader();
-        reader.setUsername(username);
-        reader.setPassword(password);
-        String result = rdao.login(reader);
-        if(result.equals("true")){
-            session.setAttribute("adminname", reader.getName());
-            request.getRequestDispatcher("/nav_s.html").forward(request, response);
+        reader=rdao.login(username,password);
+        if(reader!=null){
+            session.setAttribute("reader",reader );
+            request.getRequestDispatcher("/nav.jsp").forward(request, response);
         }
         else{
-            out.write(result);
+            out.write("error");
         }
     }
 

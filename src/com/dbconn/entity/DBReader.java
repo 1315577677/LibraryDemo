@@ -34,27 +34,29 @@ public class DBReader extends DBConnect{
         }
         return null;
     }
-    public String login(Reader u){
+    public Reader login(String username,String password){
+        Reader reader = new Reader();
         try {
             Connection conn = super.getConnection();
-            String sql = "SELECT password,name FROM reader WHERE username=?";
+            String sql = "SELECT * FROM reader WHERE username=? and password=?";
             PreparedStatement pst = null;
             ResultSet rs = null;
             pst = conn.prepareStatement(sql);
-            pst.setString(1, u.getUsername());
-            rs = pst.executeQuery();
-            if (rs.next()) {
-                if (u.getPassword().equals(rs.getString("password"))){
-                    u.setName(rs.getString("name"));
-                    return "true";
-                }
-                else{
-                    return "false";
-                }
+            pst.setString(1, username);
+            pst.setString(2,password);
+            rs=pst.executeQuery();
+            if(rs.next()){
+                reader.setUsername(rs.getString("username"));
+                reader.setPassword(rs.getString("password"));
+                reader.setName(rs.getString("name"));
+                reader.setSex(rs.getString("sex"));
+                reader.setStatus(rs.getInt("status"));
+                reader.setGrade(rs.getString("grade"));
+                reader.setClassnum(rs.getString("classnum"));
+                return reader;
             }
-            else{
-                return "false";
-            }
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }

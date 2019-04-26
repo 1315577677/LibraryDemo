@@ -18,7 +18,13 @@
 </head>
 <body>
 <jsp:include page="nav.html"/>
-</body>
+<%
+    request.setCharacterEncoding("utf-8");
+    if(session.getAttribute("adminname") == null){
+        response.sendRedirect("/Library/index.jsp");
+    }
+%>
+</body  style="background-color:#F0F0F0">
 <div class="returninfo">
     <div class="title">
         请输入读者学号

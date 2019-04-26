@@ -1,5 +1,7 @@
 package Action;
 
+import Entity.Book;
+import com.dbconn.entity.DBBook;
 import com.dbconn.entity.DBIO;
 import Entity.Log;
 import com.dbconn.entity.DBReader;
@@ -39,7 +41,16 @@ public class ReaderAction extends HttpServlet {
         else if(action.equals("readerdelete")){
             this.readerdelete(request,response);
         }
+        else if(action.equals("resiger")){
+            this.resiger(request,response);
+        }
 
+        else if(action.equals("resigerreader")){
+            this.resiger(request,response);
+        }
+        else if(action.equals("ser")){
+            this.ser(request,response);
+        }
     }
     
     protected void QueryReaderById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
@@ -114,13 +125,35 @@ public class ReaderAction extends HttpServlet {
             DBReader reader = new DBReader();
             reader.DeleteById(request.getParameter("id"));
         }else{
-            Cookie cookie = new Cookie("spot","该学生书本未还完无法删除");
-            response.addCookie(cookie);
+            response.getWriter().println("该学生有书未归还无法删除");
         }
 
 
         this.GetAllReader(request,response);
     }
+    private void resiger(HttpServletRequest request,HttpServletResponse response)throws ServletException, IOException{
+        request.getRequestDispatcher("/ReaderResiger.jsp").forward(request,response);
+    }
+
+    private void ser(HttpServletRequest request,HttpServletResponse response)throws ServletException, IOException{
+        String bookname = request.getParameter("bookname");
+        String publisher = request.getParameter("publisher");
+        DBBook bdao = new DBBook();
+        ArrayList<Book> addbooklist = bdao.serbook(bookname);
+        HttpSession session = request.getSession();
+        session.setAttribute("readerbooklist", addbooklist);
+        request.getRequestDispatcher("/rbooklist.jsp").forward(request,response);
+    }
+    protected void GetReaderBorrowListById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        String id = request.getParameter("readerid");
+        DBIO ioDao = new DBIO();
+        ArrayList<Log> loglist = ioDao.QueryBorrowNumByReaderid(id);
+        HttpSession session = request.getSession();
+        session.setAttribute("loglist", loglist);
+        request.getRequestDispatcher("/borrowlist.jsp").forward(request,response);
+    }
+
+
 
 
 }

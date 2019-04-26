@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: coolcats
-  Date: 2019-04-24
-  Time: 12:10
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page pageEncoding="utf-8"%>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
@@ -18,15 +11,7 @@
     <title>读者添加</title>
 </head>
 <body style="background-color:#F0F0F0">
-<jsp:include page="nav.html"/>
-<%
-    request.setCharacterEncoding("utf-8");
-    if(session.getAttribute("adminname") == null){
-        response.sendRedirect("/Library/index.jsp");
-    }
-%>
-
-<form action="ReaderAction?action=addreader"  method="post">
+<form action="Resiger?action=resiger"  method="post">
     <div class="bookinfo">
         <div class="title">
             <span>请输入书本信息</span>
@@ -56,8 +41,7 @@
             <span class="infotitle"></span><input class="required" name="classnum" placeholder="班级" ><span  class="error"></span>
         </div>
         <div class="button">
-            <button type="submit" class="btn btn-success" name="over" value="1">完成添加</button>
-            <button type="submit" class="btn btn-default" name="over" value="0" id="send">继续添加</button>
+            <button type="submit" class="btn btn-success" href="index.jps">完成注册</button>
         </div>
     </div>
 </form>

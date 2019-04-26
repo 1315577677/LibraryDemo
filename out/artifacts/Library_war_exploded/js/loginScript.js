@@ -27,49 +27,14 @@
     }
     function logincheck(){
         var usernameinput = document.getElementById("usernameinput").value;
-        var passwordinput = document.getElementById("passwordinput").value;
+		var passwordinput = document.getElementById("passwordinput").value;
         createXMLHttpRequest();   //调用创建XMLHttpRequest对象的方法
         xmlHttp.onreadystatechange=logincheckResult;   //设置回调函数
         var url="LoginAction?action=login&username=" + usernameinput + "&password=" + passwordinput;
-        xmlHttp.open("POST",url,true);      //向服务器端发送请求
+        xmlHttp.open("POST",url,true);
         xmlHttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=utf8");
         xmlHttp.send(null);
     }
-
-    // function logincheck1(){
-    //     var usernameinput = document.getElementById("usernameinput").value;
-    //     var passwordinput = document.getElementById("passwordinput").value;
-    //     createXMLHttpRequest1();   //调用创建XMLHttpRequest对象的方法
-    //     xmlHttp.onreadystatechange=logincheckResult;   //设置回调函数
-    //     var url="LoginAction?action=login1&username=" + usernameinput + "&password=" + passwordinput;
-    //     xmlHttp.open("POST",url,true);      //向服务器端发送请求
-    //     xmlHttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=utf8");
-    //     xmlHttp.send(null);
-    // }
-    // function logincheckResult1(){
-    //     var usernameinput = document.getElementById("usernameinput").value;
-    //     var passwordinput = document.getElementById("passwordinput").value;
-    //     var type = document.getElementsByName("type");
-    //     if (xmlHttp.readyState==4 && xmlHttp.status==200){
-    //         var data= xmlHttp.responseText;
-    //         document.getElementById("checkinfo").innerHTML = "";
-    //         if(data == "false"){
-    //             document.getElementById("checkinfo").innerHTML = "用户名或密码错误";
-    //         }
-    //         if (usernameinput == ""){
-    //             document.getElementById("checkinfo").innerHTML = "用户名不能为空";
-    //         }
-    //         if (passwordinput == ""){
-    //             document.getElementById("checkinfo").innerHTML = "密码不能为空";
-    //         }
-    //         if (usernameinput == "" && passwordinput == ""){
-    //             document.getElementById("checkinfo").innerHTML = "用户名和密码不能为空";
-    //         }
-    //
-    //         if(document.getElementById("checkinfo").innerHTML == ""){
-    //             window.location.href="nva_s.jsp";
-    //         }
-    //     }
 
     function logincheckResult(){
 		var usernameinput = document.getElementById("usernameinput").value;
@@ -92,7 +57,7 @@
 			}
 
 			if(document.getElementById("checkinfo").innerHTML == ""){
-				window.location.href="main.jsp"; 
+				window.location.href="main.jsp";
 			}
         }
     }

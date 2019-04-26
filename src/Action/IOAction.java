@@ -1,6 +1,7 @@
 package Action;
 
 import Entity.Book;
+import Entity.Reader;
 import com.dbconn.entity.DBBook;
 import com.dbconn.entity.DBIO;
 import Entity.Log;
@@ -17,7 +18,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class IOAction extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
         if(action.equals("borrow")){
             this.borrow(request, response);
@@ -28,10 +29,19 @@ public class IOAction extends HttpServlet {
         else if(action.equals("return")){
             this.ReturnBook(request, response);
         }
+        else if("readerborrow".equals(action)){
+            this.readerborrow(request, response);
+        }
+        else if("returnbook".equals(action)){
+            this.returnbook(request, response);
+        }
+        else if(action.equals("return1")){
+            this.ReturnBook1(request, response);
+        }
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        this.doPost(request, response);
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        this.doGet(request, response);
     }
 
     protected void borrow(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
@@ -77,6 +87,47 @@ public class IOAction extends HttpServlet {
         session.setAttribute("loglist", loglist);
         request.getRequestDispatcher("/borrowlist.jsp").forward(request,response);
     }
+    protected void readerborrow(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        DBIO ioDao = new DBIO();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日 HH时mm分ss秒");
+        Date date = new Date();
+        String time = sdf.format(date);
+        String readerid = request.getParameter("readerid");
+        String bookid = request.getParameter("bookid");
+        ioDao.borrow(bookid, readerid, time, 30);
+        request.getRequestDispatcher("/ReaderBorrow.jsp").forward(request,response);
+    }
+    protected void returnbook(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        HttpSession reader =request.getSession();
+
+        DBIO ioDao = new DBIO();
+        String id =request.getParameter("readerid");
+        ArrayList<Log> loglist = ioDao.QueryBorrowNumByReaderid(id);
+        HttpSession session = request.getSession();
+        session.setAttribute("loglist", loglist);
+        request.getRequestDispatcher("/returnbooklist.jsp").forward(request,response);
+
+    }
+    protected void ReturnBook1(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        DBIO ioDao = new DBIO();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日 HH时mm分ss秒");
+        Date date = new Date();
+        String Returntime = sdf.format(date);
+        String bookid = request.getParameter("bookid");
+        String readerId = request.getParameter("ReaderId");
+        String borrowtime = request.getParameter("borrowtime");
+        ioDao.ReturnBook(bookid, readerId, borrowtime, Returntime);
+        this.GetBorrowListById1(request,response);
+    }
+    protected void GetBorrowListById1(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        String id = request.getParameter("ReaderId");
+        DBIO ioDao = new DBIO();
+        ArrayList<Log> loglist = ioDao.QueryBorrowNumByReaderid(id);
+        HttpSession session = request.getSession();
+        session.setAttribute("loglist", loglist);
+        request.getRequestDispatcher("/returnbooklist.jsp").forward(request,response);
+    }
+
 
 
 }

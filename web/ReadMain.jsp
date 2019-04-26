@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Creams
-  Date: 2017/12/1
-  Time: 17:30
+  User: coolcats
+  Date: 2019-04-25
+  Time: 21:18
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -13,21 +13,22 @@
 <script src="${pageContext.request.contextPath}/js/jquery-3.2.1.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/popper.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<meta charset="utf-8">
 <html>
 <head>
-    <title>登录成功</title>
+    <title>学生账户</title>
 </head>
 <body style="background-color:#F0F0F0">
 <%
     request.setCharacterEncoding("utf-8");
-    if(session.getAttribute("adminname") == null){
-        response.sendRedirect("/Library/index.jsp");
+    if(session.getAttribute("reader") == null){
+        response.sendRedirect("index.jsp");
     }
 %>
-<jsp:include page="nav.html"/>
+<%@include file="nav.jsp"%>
 <div style="padding-top: 16%;text-align: center;">
     <h1>Welcome to CDUSEC online library </h1>
-</div>
 </div>
 </body>
 </html>

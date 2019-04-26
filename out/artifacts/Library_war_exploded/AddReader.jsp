@@ -17,7 +17,7 @@
 <head>
     <title>读者添加</title>
 </head>
-<body>
+<body style="background-color:#F0F0F0">
 <jsp:include page="nav.html"/>
 <%
     request.setCharacterEncoding("utf-8");
@@ -26,7 +26,7 @@
     }
 %>
 
-<form action="ReaderAction?action=addreader" onsubmit="return errorsubmit()" method="post">
+<form action="ReaderAction?action=addreader"  method="post">
     <div class="bookinfo">
         <div class="title">
             <span>请输入书本信息</span>

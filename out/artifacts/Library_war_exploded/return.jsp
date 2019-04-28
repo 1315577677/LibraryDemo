@@ -27,11 +27,12 @@
 </body  style="background-color:#F0F0F0">
 <div class="returninfo">
     <div class="title">
-        请输入读者学号
+        请输入读者用户名
     </div>
     <form action="ReaderAction?action=GetBorrowListById" onsubmit="return errorsubmit()" method="post">
         <div>
-            <span class="infotitle">读者学号：</span><input type="text" onkeyup="readercheck()" name="readerid"  id="readerid"><span id="readeridcheck" class="error"></span>
+            <span class="infotitle">读者用户名：</span><input type="text" onkeyup="readercheck()" name="readerid"  id="readerid">
+            <div id="readeridcheck" class="error" style="text-align: center"></div>
         </div>
         <div class="button">
             <button type="submit" class="btn btn-success">提交</button>

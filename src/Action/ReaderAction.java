@@ -26,9 +26,13 @@ public class ReaderAction extends HttpServlet {
         if(action.equals("QueryReaderById")) {
             this.QueryReaderById(request, response);
         }
+        if(action.equals("QueryReaderUserNameById")) {
+            this.QueryReaderUserNameById(request, response);
+        }
         else if (action.equals("GetBorrowListById")){
             this.GetBorrowListById(request, response);
         }
+
         else if (action.equals("GetAllReader")){
             this.GetAllReader(request, response);
         }
@@ -53,15 +57,26 @@ public class ReaderAction extends HttpServlet {
         }
     }
     
-    protected void QueryReaderById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-        String readerid = request.getParameter("readerid");
-        DBReader readerDao = new DBReader();
+    protected void QueryReaderById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{        String readerid = request.getParameter("readerid");
+            DBReader readerDao = new DBReader();
         Reader reader = readerDao.QueryReaderById(readerid);
         String stauts = (reader.getStatus() == 1) ? "正常" : "异常";
-        String callback = reader.getName() + "||" + reader.getGrade() + "年级" + reader.getClassnum() + "班||" + stauts + "||" + reader.getBorrow();
+        String callback = reader.getName() + "||" + reader.getGrade() + "系" + reader.getClassnum() + "班||" + stauts + "||" + reader.getBorrow();
         PrintWriter out = response.getWriter();
         out.write(callback);
+
     }
+    protected void QueryReaderUserNameById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        String readerid = request.getParameter("id");
+        DBReader readerDao = new DBReader();
+        PrintWriter out = response.getWriter();
+        if(readerDao.isin(readerid)){
+            out.write("true");
+        }else {
+            out.write("false");
+        }
+    }
+
 
     protected void GetBorrowListById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         String id = request.getParameter("readerid");

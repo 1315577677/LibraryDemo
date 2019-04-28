@@ -8,7 +8,7 @@
             }
             catch(e){
                 try{
-                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+                     xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
                 }
                 catch(ee){
                     xmlHttp=false;
@@ -39,7 +39,7 @@
     function logincheckResult(){
 		var usernameinput = document.getElementById("usernameinput").value;
 		var passwordinput = document.getElementById("passwordinput").value;
-        var type = document.getElementsByName("type");
+        //var type = document.getElementsByName("type");
         if (xmlHttp.readyState==4 && xmlHttp.status==200){
             var data= xmlHttp.responseText;
 			document.getElementById("checkinfo").innerHTML = "";

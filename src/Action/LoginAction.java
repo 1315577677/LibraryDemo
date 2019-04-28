@@ -68,7 +68,7 @@ public class LoginAction extends HttpServlet {
             request.getRequestDispatcher("/nav.jsp").forward(request, response);
         }
         else{
-            out.write("error");
+            out.write("false");
         }
     }
 

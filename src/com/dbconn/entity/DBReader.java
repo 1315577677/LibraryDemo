@@ -147,4 +147,24 @@ public class DBReader extends DBConnect{
             e.printStackTrace();
         }
     }
+    public boolean isin(String id){
+        try {
+            Connection conn = super.getConnection();
+            conn = super.getConnection();
+            String sql = "SELECT * FROM reader WHERE username=" + "'" + id + "'";
+            PreparedStatement pst = null;
+            ResultSet rs = null;
+            pst = conn.prepareStatement(sql);
+            rs = pst.executeQuery();
+            while (rs.next()){
+                return true;
+            }
+        }catch ( Exception e){
+            e.printStackTrace();
+        }
+
+        return false;
+    }
+
 }
+

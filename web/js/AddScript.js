@@ -45,9 +45,4 @@
 			}
         }
     }
-	
-	function errorsubmit(){
-		var bookidcheck =  document.getElementById("bookidcheck").innerHTML;
-		if (bookidcheck.length > 0)
-			return false;
-	}
+

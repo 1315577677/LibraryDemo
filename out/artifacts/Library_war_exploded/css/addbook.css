@@ -1,5 +1,7 @@
 .bookinfo{
-	padding-top: 100px;
+	margin: 100px auto;
+	width: 360px;
+	font-size: 13px
 }
 .required{
 	height: 48px;

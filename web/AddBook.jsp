@@ -7,10 +7,40 @@
 <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 <html>
+<script>
+    function isbookid() {
+      var book=  document.getElementById("bookid").value;
+
+      if(book.length==0){
+          document.getElementById("bookidcheck").innerHTML="书本编号不能为空";
+          return false;
+      }else {
+          document.getElementById("bookidcheck").innerHTML="";
+      }
+      return true;
+    }
+
+    function isbook() {
+        var book=  document.getElementById("book").value;
+
+        if(book.length==0){
+            document.getElementById("booknamecheck").innerHTML="书本名不能为空";
+            return false;
+        }else{
+            document.getElementById("booknamecheck").innerHTML="";
+        }
+
+        return true;
+    }
+    function formcheck () {
+        return isbook()&&isbookid();
+
+    }
+</script>
 <head>
     <title>书本添加</title>
 </head>
-<body style="background-color:#F0F0F0">
+<body>
 <jsp:include page="nav.html"/>
 <%
     request.setCharacterEncoding("utf-8");
@@ -18,16 +48,16 @@
         response.sendRedirect("/Library/index.jsp");
     }
 %>
-<form action="BookAction?action=addtemp" onsubmit="return errorsubmit()" method="post">
+<form action="BookAction?action=addtemp" onsubmit="return formcheck()" method="post">
     <div class="bookinfo">
         <div class="title">
             <span>请输入书本信息</span>
         </div>
         <div class="title">
-            <span class="infotitle"></span><input name="bookid" class="required" id="bookid" onkeyup="bookcheck()"  placeholder="书本编号" ><span id="bookidcheck" class="error"></span>
+            <span class="infotitle"></span><input name="bookid" class="required" id="bookid" onkeyup="bookcheck()"  onblur="isbookid()" placeholder="书本编号" ><span id="bookidcheck" class="error"></span>
         </div>
         <div class="title">
-            <span class="infotitle"></span><input class="required" name="bookname" placeholder="书本名称"><span id="booknamecheck" class="error" ></span>
+            <span class="infotitle"></span><input class="required" id="book" name="bookname" placeholder="书本名称" onblur="isbook()"><span id="booknamecheck" class="error" ></span>
         </div>
         <div class="title">
             <span class="infotitle"></span><input class="required" name="bookauthor"placeholder="书本作者"><span id="bookauthorcheck" class="error"></span>

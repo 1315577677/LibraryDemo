@@ -7,56 +7,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="433b7e59-ac05-4f8d-a961-3a340ede1ac3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/ReadMain.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ReaderBorrow.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ReaderResiger.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/damin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/nav.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/rbooklist.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/returnbooklist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/read_login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/res_reader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/AddBook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/AddBook.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/AddReader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/AddReader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/Action/IOAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/Action/IOAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/ReaderResiger.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/ReaderResiger.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/Action/LoginAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/Action/LoginAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/Action/ReaderAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/Action/ReaderAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/com/dbconn/entity/DBBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/com/dbconn/entity/DBBook.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/com/dbconn/entity/DBReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/classes/com/dbconn/entity/DBReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/booklist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/booklist.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/borrowlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/borrowlist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/borrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/borrow.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/css/addbook.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/css/addbook.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/css/detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/css/detail.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/damin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/damin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/edit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/js/AddScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/js/AddScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/js/InfoScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/js/InfoScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/js/loginScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/js/loginScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/nav_s.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/return.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_war_exploded/return.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Action/IOAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Action/IOAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Action/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Action/LoginAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Action/ReaderAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Action/ReaderAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dbconn/entity/DBBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dbconn/entity/DBBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/dbconn/entity/DBReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dbconn/entity/DBReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/AddBook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/AddBook.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/AddReader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/AddReader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/IOLog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/IOLog.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ReaderList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ReaderList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Action/IOAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Action/IOAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ReaderResiger.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ReaderResiger.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Action/LoginAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Action/LoginAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Action/ReaderAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Action/ReaderAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/dbconn/entity/DBBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/dbconn/entity/DBBook.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/dbconn/entity/DBReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/dbconn/entity/DBReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/addconfirm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/addconfirm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/booklist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/booklist.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/borrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/borrow.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/borrowlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/borrowlist.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/addbook.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/addbook.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/detail.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/damin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/damin.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/edit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/AddScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/AddScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/InfoScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/InfoScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/loginScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/loginScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/nav_s.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/return.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/return.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -82,114 +73,14 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/nav.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#span#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/return.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/returnbooklist.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/AddBook.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/addconfirm.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/AddReader.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/booklist.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/damin.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
-              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/nav.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="Jsp File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -204,13 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/DBConn/DBConnect.java" />
-        <option value="$PROJECT_DIR$/src/com/dbconn/tool/com/dbconn/entity/BookDao.java" />
-        <option value="$PROJECT_DIR$/src/Dao/BookDao.java" />
-        <option value="$PROJECT_DIR$/src/con/dbconn/entity/BookDao.java" />
-        <option value="$PROJECT_DIR$/src/con/dbconn/entity/IODao.java" />
-        <option value="$PROJECT_DIR$/src/con/dbconn/entity/ReaderDao.java" />
         <option value="$PROJECT_DIR$/src/con/dbconn/entity/DBReader.java" />
         <option value="$PROJECT_DIR$/src/con/dbconn/entity/UserDao.java" />
         <option value="$PROJECT_DIR$/src/con/dbconn/entity/DBUser.java" />
@@ -221,40 +105,47 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/nav.html" />
         <option value="$PROJECT_DIR$/web/AddReade.jsp" />
         <option value="$PROJECT_DIR$/src/com/dbconn/entity/DBIO.java" />
-        <option value="$PROJECT_DIR$/web/js/loginScript.js" />
         <option value="$PROJECT_DIR$/web/mva.html" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/nav_s.html" />
         <option value="$PROJECT_DIR$/src/Action/BookAction.java" />
         <option value="$PROJECT_DIR$/src/com/dbconn/entity/DBBook.java" />
-        <option value="$PROJECT_DIR$/src/Action/LoginAction.java" />
         <option value="$PROJECT_DIR$/src/Action/Resiger.java" />
-        <option value="$PROJECT_DIR$/src/com/dbconn/entity/DBReader.java" />
-        <option value="$PROJECT_DIR$/src/Action/ReaderAction.java" />
         <option value="$PROJECT_DIR$/src/Action/IOAction.java" />
         <option value="$PROJECT_DIR$/web/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/web/css/login.css" />
         <option value="$PROJECT_DIR$/web/ReadMain.jsp" />
-        <option value="$PROJECT_DIR$/web/return.jsp" />
         <option value="$PROJECT_DIR$/web/returnbooklist.jsp" />
-        <option value="$PROJECT_DIR$/web/ReaderResiger.jsp" />
         <option value="$PROJECT_DIR$/web/ReaderList.jsp" />
         <option value="$PROJECT_DIR$/web/ReaderBorrow.jsp" />
         <option value="$PROJECT_DIR$/web/rbooklist.jsp" />
         <option value="$PROJECT_DIR$/web/nav.jsp" />
-        <option value="$PROJECT_DIR$/web/nav.html" />
         <option value="$PROJECT_DIR$/web/main.jsp" />
         <option value="$PROJECT_DIR$/web/IOLog.jsp" />
-        <option value="$PROJECT_DIR$/web/edit.jsp" />
         <option value="$PROJECT_DIR$/web/detail.jsp" />
-        <option value="$PROJECT_DIR$/web/damin.jsp" />
         <option value="$PROJECT_DIR$/web/borrowlist.jsp" />
-        <option value="$PROJECT_DIR$/web/borrow.jsp" />
         <option value="$PROJECT_DIR$/web/booklist.jsp" />
-        <option value="$PROJECT_DIR$/web/AddReader.jsp" />
         <option value="$PROJECT_DIR$/web/addconfirm.jsp" />
-        <option value="$PROJECT_DIR$/web/AddBook.jsp" />
+        <option value="$PROJECT_DIR$/web/js/rea_login.jsp" />
+        <option value="$PROJECT_DIR$/src/Action/LoginAction.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/css/login.css" />
+        <option value="$PROJECT_DIR$/web/js/loginScript.js" />
+        <option value="$PROJECT_DIR$/web/js/read_login.js" />
+        <option value="$PROJECT_DIR$/web/damin.jsp" />
+        <option value="$PROJECT_DIR$/web/return.jsp" />
+        <option value="$PROJECT_DIR$/web/css/detail.css" />
+        <option value="$PROJECT_DIR$/web/edit.jsp" />
+        <option value="$PROJECT_DIR$/src/com/dbconn/entity/DBReader.java" />
+        <option value="$PROJECT_DIR$/web/js/res_reader.js" />
+        <option value="$PROJECT_DIR$/web/css/addbook.css" />
+        <option value="$PROJECT_DIR$/web/ReaderResiger.jsp" />
+        <option value="$PROJECT_DIR$/web/AddReader.jsp" />
+        <option value="$PROJECT_DIR$/web/borrow.jsp" />
+        <option value="$PROJECT_DIR$/web/js/InfoScript.js" />
+        <option value="$PROJECT_DIR$/src/Action/ReaderAction.java" />
+        <option value="$PROJECT_DIR$/web/js/AddScript.js" />
+        <option value="$PROJECT_DIR$/web/AddBook.jsp" />
+        <option value="$PROJECT_DIR$/web/nav.html" />
       </list>
     </option>
   </component>
@@ -276,6 +167,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -319,6 +211,18 @@
             </path>
             <path>
               <item name="Library-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library-master" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Library-master" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Library-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
@@ -330,7 +234,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -338,7 +241,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556285653283" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556430184643" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -478,11 +381,15 @@
       <workItem from="1556179776872" duration="655000" />
       <workItem from="1556185098418" duration="21195000" />
       <workItem from="1556238070076" duration="34142000" />
+      <workItem from="1556285931398" duration="397000" />
+      <workItem from="1556340668080" duration="24790000" />
+      <workItem from="1556381237467" duration="504000" />
+      <workItem from="1556413757924" duration="14299000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155355000" />
+    <option name="totallyTimeSpent" value="195345000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -494,10 +401,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1366" height="741" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1366" height="741" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8896552" visible="true" weight="0.22734138" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8896552" visible="true" weight="0.23942599" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -571,141 +477,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>30</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>32</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>29</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>27</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>28</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>31</line>
-          <option name="timeStamp" value="148" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>39</line>
-          <option name="timeStamp" value="150" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>40</line>
-          <option name="timeStamp" value="151" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>41</line>
-          <option name="timeStamp" value="152" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>43</line>
-          <option name="timeStamp" value="153" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>42</line>
-          <option name="timeStamp" value="154" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>44</line>
-          <option name="timeStamp" value="155" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>47</line>
-          <option name="timeStamp" value="156" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>45</line>
-          <option name="timeStamp" value="158" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>48</line>
-          <option name="timeStamp" value="159" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>49</line>
-          <option name="timeStamp" value="160" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>50</line>
-          <option name="timeStamp" value="163" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>52</line>
-          <option name="timeStamp" value="164" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>51</line>
-          <option name="timeStamp" value="165" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>53</line>
-          <option name="timeStamp" value="166" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>54</line>
-          <option name="timeStamp" value="167" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>58</line>
-          <option name="timeStamp" value="168" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>60</line>
-          <option name="timeStamp" value="170" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>59</line>
-          <option name="timeStamp" value="171" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>56</line>
-          <option name="timeStamp" value="172" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>55</line>
-          <option name="timeStamp" value="173" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/web/js/loginScript.js</url>
-          <line>46</line>
-          <option name="timeStamp" value="174" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/dbconn/entity/DBReader.java</url>
           <line>38</line>
@@ -728,51 +499,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/js/demo.js" />
-    <entry file="file://$PROJECT_DIR$/src/com/dbconn/tool/DBConnect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/nav.html" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/net/AbstractPlainSocketImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="386" selection-start-line="386" selection-end-line="386" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/AddReade.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/css/addbook.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Unsafe.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="353" column="23" selection-start-line="353" selection-start-column="23" selection-end-line="353" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/InfoScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1319">
-          <caret line="141" column="5" lean-forward="true" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/loginScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dbconn/entity/DBUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
@@ -792,20 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/servlet-api.jar!/javax/servlet/http/HttpServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/AddScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/mva.html" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -814,13 +526,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/nav_s.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/nav_s.html" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/jsp/lib/jsp-impl.jar!/standardSchemas/jspdirectives2_1.xsd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -839,26 +545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Action/Resiger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Action/ReaderAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -885,46 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dbconn/entity/DBReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Action/LoginAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="66" column="48" selection-start-line="66" selection-start-column="48" selection-end-line="66" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Action/BookAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-390">
-          <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Action/IOAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="97" column="51" selection-start-line="97" selection-start-column="51" selection-end-line="97" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -942,24 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/IOLog.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -970,71 +598,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/borrowlist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/borrow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/rbooklist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/ReaderBorrow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/ReaderList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-317">
           <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/ReaderResiger.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-260">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1045,82 +612,293 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/return.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/returnbooklist.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
+        <state relative-caret-position="345">
           <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/AddBook.jsp">
+    <entry file="file://$PROJECT_DIR$/web/js/bootstrap.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+        <state>
           <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/addconfirm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
+        <state relative-caret-position="180">
           <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/AddReader.jsp">
+    <entry file="file://$PROJECT_DIR$/web/js/rea_login.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/nav.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
+        <state relative-caret-position="257">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
           <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/booklist.jsp">
+    <entry file="file://$PROJECT_DIR$/web/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        <state relative-caret-position="203">
+          <caret line="55" selection-start-line="50" selection-end-line="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/damin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        <state relative-caret-position="103">
+          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/nav.jsp">
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        <state relative-caret-position="465">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/return.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/detail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/servlet-api.jar!/javax/servlet/http/HttpServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="253" selection-start-line="253" selection-end-line="253" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Action/IOAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="97" column="51" selection-start-line="97" selection-start-column="51" selection-end-line="97" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/loginScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/read_login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dbconn/entity/DBReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="149" column="19" selection-start-line="149" selection-start-column="19" selection-end-line="149" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ReaderBorrow.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/rbooklist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/borrow.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/addbook.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/res_reader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-77">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/borrowlist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/booklist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/AddReader.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2430">
+          <caret line="162" column="107" selection-start-line="162" selection-start-column="107" selection-end-line="162" selection-end-column="107" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#7;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#1;n#div#7;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#8;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#8;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ReaderResiger.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1369">
+          <caret line="143" column="24" selection-start-line="143" selection-start-column="24" selection-end-line="143" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#7;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#1;n#div#7;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#8;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#8;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/InfoScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="31" column="53" lean-forward="true" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Action/ReaderAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1316">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Action/Resiger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Action/BookAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-815">
+          <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Action/LoginAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="47" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/AddScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/nav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        <state relative-caret-position="645">
+          <caret line="43" column="89" selection-start-line="43" selection-start-column="89" selection-end-line="43" selection-end-column="89" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+    <entry file="file://$PROJECT_DIR$/web/AddBook.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#span#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="-292">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/borrow.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="34" column="81" selection-start-line="34" selection-start-column="81" selection-end-line="34" selection-end-column="81" />
         </state>
       </provider>
     </entry>

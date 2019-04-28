@@ -24,7 +24,7 @@
 	background-color: white;
 }
 #resiger{
-	width: 310px;
+	width: 256px;
 }
 
 
@@ -49,12 +49,8 @@
 }
 
 .errorsubmit{
-	margin-top:5px;
-	margin-bottom:0px;
-	margin-right:0px;
-	margin-left:90px;
-	width:400px;
-	height:26px;
+	text-align: center;
+	height:35px;
 	color:red;
 }
 

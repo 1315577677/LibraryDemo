@@ -34,6 +34,7 @@ function logincheck(){
     xmlHttp.open("POST",url,true);
     xmlHttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=utf8");
     xmlHttp.send(null);
+
 }
 
 function logincheckResult(){

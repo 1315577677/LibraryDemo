@@ -1,5 +1,4 @@
 package Entity;
-
 public class Log {
     private String readerid;
     private String service;

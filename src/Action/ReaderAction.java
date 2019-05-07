@@ -57,8 +57,9 @@ public class ReaderAction extends HttpServlet {
         }
     }
     
-    protected void QueryReaderById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{        String readerid = request.getParameter("readerid");
-            DBReader readerDao = new DBReader();
+    protected void QueryReaderById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        String readerid = request.getParameter("readerid");
+        DBReader readerDao = new DBReader();
         Reader reader = readerDao.QueryReaderById(readerid);
         String stauts = (reader.getStatus() == 1) ? "正常" : "异常";
         String callback = reader.getName() + "||" + reader.getGrade() + "系" + reader.getClassnum() + "班||" + stauts + "||" + reader.getBorrow();

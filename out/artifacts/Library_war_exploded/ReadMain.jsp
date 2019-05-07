@@ -19,12 +19,13 @@
 <head>
     <title>学生账户</title>
 </head>
-<body style="background-color:#F0F0F0">
+<body background="./image/bg.jpg">
 <%
     request.setCharacterEncoding("utf-8");
     if(session.getAttribute("reader") == null){
         response.sendRedirect("index.jsp");
     }
+    Cookie cookie= new Cookie("cis","0");
 %>
 <%@include file="nav.jsp"%>
 <div style="padding-top: 16%;text-align: center;">

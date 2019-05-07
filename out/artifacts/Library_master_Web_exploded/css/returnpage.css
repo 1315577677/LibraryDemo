@@ -1,0 +1,35 @@
+.returninfo{
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 30%;
+	width: 591px;
+}
+
+.title{
+	margin-left:200px;
+	font-size:30px;
+	font-family:"宋体";
+}
+
+.infotitle{
+	font-family:"仿宋";
+	font-size:25px;
+}
+
+button{
+	width:110px;
+}
+
+.button{
+	margin-left:195px;
+	margin-top:50px;
+}
+
+input{
+	width:450px;
+	margin-right:5px;
+}
+
+.error{
+	color:red;
+}

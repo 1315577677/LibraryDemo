@@ -28,6 +28,5 @@
         <input type="submit" value="查询"/>
     </form>
 </div>
-
 </body>
 </html>

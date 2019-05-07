@@ -10,15 +10,13 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
 <script src="${pageContext.request.contextPath}/js/jquery-3.2.1.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/read_login.js"></script>
-<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 <html>
 <head>
     <title>学生登录</title>
 </head>
-<body style="background-color:#F0F0F0">
+<body background="./image/bg.jpg">
 <div class="welcome">
-
     <div class="loginform1">
         <div>
             <span id="labellogin">学生登录</span><br>

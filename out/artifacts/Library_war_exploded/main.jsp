@@ -17,7 +17,7 @@
 <head>
     <title>登录成功</title>
 </head>
-<body style="background-color:#F0F0F0">
+<body background="./image/bg.jpg">
 <%
     request.setCharacterEncoding("utf-8");
     if(session.getAttribute("adminname") == null){

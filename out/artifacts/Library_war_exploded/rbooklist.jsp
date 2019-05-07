@@ -18,15 +18,78 @@
     reader=(Reader)session.getAttribute("reader");
     ArrayList<Book> booklist = (ArrayList<Book>)session.getAttribute("readerbooklist");
 %>
+<script>
+    var xmlHttp=false;
+    function createXMLHttpRequest()
+    {
+        if (window.ActiveXObject)  //在IE浏览器中创建XMLHttpRequest对象
+        {
+            try{
+                xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+            }
+            catch(e){
+                try{
+                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                catch(ee){
+                    xmlHttp=false;
+                }
+            }
+        }
+        else if (window.XMLHttpRequest) //在非IE浏览器中创建XMLHttpRequest对象
+        {
+            try{
+                xmlHttp = new XMLHttpRequest();
+            }
+            catch(e){
+                xmlHttp=false;
+            }
+        }
+    }
+    function readercheck(){
+        var readerid = <%=reader.getUsername()%>;
+        createXMLHttpRequest();   //调用创建XMLHttpRequest对象的方法
+        xmlHttp.onreadystatechange=readercheckResult;   //设置回调函数
+        var url="ReaderAction?action=QueryReaderById&readerid=" + readerid;
+        xmlHttp.open("POST",url,true);      //向服务器端发送请求
+        xmlHttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=utf8");
+        xmlHttp.send(null);
+    }
+
+    function readercheckResult() {
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+            var data = xmlHttp.responseText;
+            var parameters = data.split("||");
+            var getreadername=parameters[0]
+            var getreaderstatus = parameters[2];
+            var getreaderborrow = parameters[3];
+            if (getreaderstatus == "异常" && getreadername != "null") {
+                document.getElementById("error").innerHTML = "<p style='color: red'>*用户异常无法借阅,请联系管理员</p>";
+            } else if (getreaderborrow == "5") {
+                document.getElementById("error").innerHTML = "<p style='color: red'>*用户借阅过多无法借阅</p>";
+            } else {
+                document.getElementById("error").innerHTML = "";
+            }
+
+        }
+    }
+        function  errorsubmit(a) {
+        if(!a){
+            document.getElementById("error").innerHTML="<p style='color: red'>该书已借完</p>";
+        }
+        var check =  document.getElementById("error").innerHTML;
+            if(check.length>0)return false;
+        }
+
+</script>
 <html>
 <head>
     <title>图书管理</title>
 </head>
 <body style="background-color:#F0F0F0">
 <jsp:include page="ReaderBorrow.jsp"/>
+<div style="height: 16px" id="error"></div>
 <table class="table">
-
-
         <thead>
         <tr>
             <th>书本编号</th>
@@ -61,8 +124,9 @@
         <td><%=b.getLend()%></td>
         <td><%=b.getRemain()%></td>
         <td><%=b.getLocation()%></td>
-        <td><a href="IOAction?action=readerborrow&bookid=<%=b.getId()%>&readerid=<%=reader.getUsername()%>">借书</a></td>
+        <td><a href="IOAction?action=readerborrow&bookid=<%=b.getId()%>&readerid=<%=reader.getUsername()%>" onclick="return errorsubmit(<%=b.getRemain()%>)" onmousemove="readercheck()" >借书</a></td>
     </tr>
+
     <%
             }
         }

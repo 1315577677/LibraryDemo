@@ -13,11 +13,12 @@
 <script src="${pageContext.request.contextPath}/js/jquery-3.2.1.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/popper.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/login.css">
 <html>
 <head>
     <title>登录成功</title>
 </head>
-<body background="./image/bg.jpg">
+<body id="back">
 <%
     request.setCharacterEncoding("utf-8");
     if(session.getAttribute("adminname") == null){

@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/login.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/welcome.css"  type="text/css" />
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
 <script src="${pageContext.request.contextPath}/js/jquery-3.2.1.min.js"></script>
@@ -19,7 +20,7 @@
 <head>
     <title>学生账户</title>
 </head>
-<body background="./image/bg.jpg">
+<body id="back">
 <%
     request.setCharacterEncoding("utf-8");
     if(session.getAttribute("reader") == null){

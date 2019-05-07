@@ -15,7 +15,7 @@
 <head>
     <title>管理员登录</title>
 </head>
-<body background="./image/bg.jpg">
+<body id="back">
 <div class="welcome">
 
     <div class="loginform">

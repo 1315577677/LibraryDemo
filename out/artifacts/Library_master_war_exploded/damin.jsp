@@ -22,7 +22,7 @@
         <div>
             <span id="labellogin" style="color: white">管理员登录</span><br>
             <div class="form-group">
-                <input type="text" class="form-control" id="usernameinput" name="username" placeholder="用户名 "/>
+                <input type="text" class="form-control" id="usernameinput" autofocus name="username" placeholder="用户名 "/>
             </div>
             <div class="form-group">
                 <input type="password" class="form-control" id="passwordinput" name="password" placeholder="密码"/>

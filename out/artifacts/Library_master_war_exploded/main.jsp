@@ -26,9 +26,6 @@
     }
 %>
 <jsp:include page="nav.html"/>
-<div style="padding-top: 16%;text-align: center;">
-    <h1>Welcome to CDUSEC online library </h1>
-</div>
 </div>
 </body>
 </html>

@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
 <script src="${pageContext.request.contextPath}/js/jquery-3.2.1.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/InfoScript.js"></script>
+<script language="JavaScript" src="js/popper.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 <html>
 <head>
@@ -32,7 +33,7 @@
     </div>
     <form action="IOAction?action=borrow" onsubmit="return errorsubmit()" method="post">
         <div>
-            <span class="infotitle">读者学号：</span><input type="text" onkeyup="readercheck()" name="readerid" id="readerid"><span id="readeridcheck" class="error"></span>
+            <span class="infotitle">读者学号：</span><input type="text" autofocus onkeyup="readercheck()" name="readerid" id="readerid"><span id="readeridcheck" class="error"></span>
         </div>
         <div>
             <span class="infotitle">读者姓名：</span><input type="text" name="readername" id="readername" disabled>

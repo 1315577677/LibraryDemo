@@ -35,7 +35,7 @@
             <span>编辑图书详情信息</span>
         </div>
         <div class="title">
-            <span class="infotitle">书本编号：</span><input name="id" value="<%=book.getId()%>" readonly="readonly">
+            <span class="infotitle">书本编号：</span><input  autofocus name="id" value="<%=book.getId()%>" readonly="readonly">
         </div>
         <div class="title">
             <span class="infotitle">书本名称：</span><input name="name" value="<%=book.getName()%>">

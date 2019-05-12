@@ -38,6 +38,13 @@ public class IOAction extends HttpServlet {
         else if(action.equals("return1")){
             this.ReturnBook1(request, response);
         }
+        else if(action.equals("ret")){
+            this.ret(request, response);
+        }
+    }
+
+    private void ret(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
+        request.getRequestDispatcher("/return.jsp").forward(request,response);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

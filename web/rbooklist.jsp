@@ -47,7 +47,7 @@
         }
     }
     function readercheck(){
-        var readerid = <%=reader.getUsername()%>;
+        var readerid = "<%=reader.getUsername()%>";
         createXMLHttpRequest();   //调用创建XMLHttpRequest对象的方法
         xmlHttp.onreadystatechange=readercheckResult;   //设置回调函数
         var url="ReaderAction?action=QueryReaderById&readerid=" + readerid;
@@ -124,7 +124,7 @@
         <td><%=b.getLend()%></td>
         <td><%=b.getRemain()%></td>
         <td><%=b.getLocation()%></td>
-        <td><a href="IOAction?action=readerborrow&bookid=<%=b.getId()%>&readerid=<%=reader.getUsername()%>" onclick="return errorsubmit(<%=b.getRemain()%>)" onmousemove="readercheck()" >借书</a></td>
+        <td><a href="IOAction?action=readerborrow&bookid=<%=b.getId()%>&readerid=<%=reader.getUsername()%>"  onclick="return errorsubmit(<%=b.getRemain()%>)" onmousemove="readercheck()" >借书</a></td>
     </tr>
 
     <%

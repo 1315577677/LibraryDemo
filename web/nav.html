@@ -17,9 +17,7 @@
                 <a class="nav-link" href="main.jsp">首页</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href=""  data-toggle="dropdown">
-                    图书维护
-                </a>
+                <a class="nav-link dropdown-toggle" href=""  data-toggle="dropdown">图书维护</a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="BookAction?action=getall">查看图书总表</a>
                     <a class="dropdown-item" href="AddBook.jsp">添加书本</a>
@@ -27,12 +25,19 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">借书与还书</a>
+                <a class="nav-link dropdown-toggle" href=""  data-toggle="dropdown">图书借还</a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="borrow.jsp">借书</a>
-                    <a class="dropdown-item" href="return.jsp">还书</a>
+                    <a class="dropdown-item" href="IOAction?action=ret">还书</a>
                 </div>
             </li>
+            <!--<li class="nav-item dropdown">-->
+                <!--<a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">借书与还书</a>-->
+                <!--<div class="dropdown-menu">-->
+                    <!--<a class="dropdown-item" href="borrow.jsp">借书</a>-->
+                    <!--<a class="dropdown-item" href="IOAction?action=ret">还书</a>-->
+                <!--</div>-->
+            <!--</li>-->
             <li class="nav-item">
                 <a class="nav-link" href="IOAction?action=getlog">图书进出记录</a>
             </li>

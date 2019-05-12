@@ -29,9 +29,9 @@
     <div class="title">
         请输入读者用户名
     </div>
-    <form action="ReaderAction?action=GetBorrowListById" onsubmit="return errorsubmit()" method="post">
+    <form action="ReaderAction?action=GetBorrowListById"  onsubmit="return errorsubmit()" method="post">
         <div>
-            <span class="infotitle">读者用户名：</span><input type="text" onkeyup="readercheck()" name="readerid"  id="readerid">
+            <span class="infotitle">读者用户名：</span><input type="text" autofocus onkeyup="readercheck()" name="readerid"  id="readerid">
             <div id="readeridcheck" class="error" style="text-align: center"></div>
         </div>
         <div class="button">

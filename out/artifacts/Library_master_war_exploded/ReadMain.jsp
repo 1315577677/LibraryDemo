@@ -29,8 +29,5 @@
     Cookie cookie= new Cookie("cis","0");
 %>
 <%@include file="nav.jsp"%>
-<div style="padding-top: 16%;text-align: center;">
-    <h1>Welcome to CDUSEC online library </h1>
-</div>
 </body>
 </html>

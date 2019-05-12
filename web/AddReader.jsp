@@ -114,7 +114,7 @@
                 <h3>读者注册</h3>
             </div>
             <div class="size">
-                <span class="infotitle"></span><input name="username" class="required" id="username" onkeyup="readercheck()"  onblur="checkusernameleng()" placeholder="用户名：6-20个字母、数字、下划线" ><span class="error" id="usernamecheck"></span>
+                <span class="infotitle"></span><input name="username" class="required" id="username" onkeyup="readercheck()"  onblur="checkusernameleng()" autofocus placeholder="用户名：6-20个字母、数字、下划线" ><span class="error" id="usernamecheck"></span>
             </div>
             <div class="size ">
                 <span class="infotitle"></span><input id="pass1" type="password" class="required" name="password" placeholder="密码：6-20个字母、数字、下划线"onkeyup="checkpasswordleng()"  ><span  class="error"id="checkpass1" ></span>

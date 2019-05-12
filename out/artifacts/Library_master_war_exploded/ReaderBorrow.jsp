@@ -22,11 +22,13 @@
 </head>
 <body style="background-color:#F0F0F0">
 <jsp:include page="nav.jsp"/>
-<div>
-    <form action="ReaderAction?action=ser" method="post">
-        <input name="bookname" placeholder="书名">
-        <input type="submit" value="查询"/>
-    </form>
+<div style="background-color: #444444;height: 28px">
+    <div style="width: 500px;margin: 0 auto;height: 27px;background-color: white ">
+        <form action="ReaderAction?action=ser" method="post">
+            <input style="width:445px;border: 0px" name="bookname" autofocus placeholder="书名">
+            <input style="width:50px;border: 0px" type="submit" value="查询"/>
+        </form>
+    </div>
 </div>
 </body>
 </html>

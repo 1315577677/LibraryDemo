@@ -7,36 +7,6 @@
 <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 <html>
-<script>
-    function isbookid() {
-      var book=  document.getElementById("bookid").value;
-
-      if(book.length==0){
-          document.getElementById("bookidcheck").innerHTML="书本编号不能为空";
-          return false;
-      }else {
-          document.getElementById("bookidcheck").innerHTML="";
-      }
-      return true;
-    }
-
-    function isbook() {
-        var book=  document.getElementById("book").value;
-
-        if(book.length==0){
-            document.getElementById("booknamecheck").innerHTML="书本名不能为空";
-            return false;
-        }else{
-            document.getElementById("booknamecheck").innerHTML="";
-        }
-
-        return true;
-    }
-    function formcheck () {
-        return isbook()&&isbookid();
-
-    }
-</script>
 <head>
     <title>书本添加</title>
 </head>
@@ -54,28 +24,28 @@
             <span>请输入书本信息</span>
         </div>
         <div class="title">
-            <span class="infotitle"></span><input name="bookid" class="required" id="bookid" onkeyup="bookcheck()"  onblur="isbookid()" placeholder="书本编号" ><span id="bookidcheck" class="error"></span>
+            <span class="infotitle"></span><input name="bookid" class="required" id="bookid" autofocus onkeyup="bookcheck(),this.value=this.value.replace(/\D/g,'')"required placeholder="书本编号" ><span id="bookidcheck" class="error"></span>
         </div>
         <div class="title">
-            <span class="infotitle"></span><input class="required" id="book" name="bookname" placeholder="书本名称" onblur="isbook()"><span id="booknamecheck" class="error" ></span>
+            <span class="infotitle"></span><input class="required" id="name" name="bookname" placeholder="书本名称" required><span id="booknamecheck" class="error" ></span>
         </div>
         <div class="title">
-            <span class="infotitle"></span><input class="required" name="bookauthor"placeholder="书本作者"><span id="bookauthorcheck" class="error"></span>
+            <span class="infotitle"></span><input class="required" id="author" name="bookauthor"placeholder="书本作者" required><span id="bookauthorcheck" class="error"></span>
         </div>
         <div class="title">
-            <span class="infotitle"></span><input class="required" name="bookpublisher" placeholder="出版单位"><span id="bookpublishercheck" class="error"></span>
+            <span class="infotitle"></span><input class="required" id="publisher"name="bookpublisher" placeholder="出版单位" required><span id="bookpublishercheck" class="error"></span>
         </div>
         <div class="title">
-            <span class="infotitle"></span><input class="required" name="bookprice" placeholder="书本价格"><span id="bookpricecheck" class="error"></span>
+            <span class="infotitle"></span><input class="required" id="price" name="bookprice" placeholder="书本价格" onkeyup="this.value=this.value.replace(/\D/g,'')" required><span id="bookpricecheck" class="error"></span>
         </div>
         <div class="title">
-            <span class="infotitle"></span><input class="required" name="bookcategory" placeholder="书本类目"><span id="bookcategorycheck" class="error"></span>
+            <span class="infotitle"></span><input class="required" id="category" name="bookcategory" placeholder="书本类目" required><span id="bookcategorycheck" class="error"></span>
         </div>
         <div class="title">
-            <span class="infotitle"></span><input class="required" name="bookstore" placeholder="书本库存" ><span id="bookstorecheck" class="error"></span>
+            <span class="infotitle"></span><input class="required" id="store" name="bookstore" placeholder="书本库存" onkeyup="this.value=this.value.replace(/\D/g,'')" required><span id="bookstorecheck" class="error"></span>
         </div>
         <div class="title">
-            <span class="infotitle"></span><input class="required" name="booklocation" placeholder="所在位置" ><span id="booklocationcheck" class="error"></span>
+            <span class="infotitle"></span><input class="required" id="location" name="booklocation" placeholder="所在位置" required><span id="booklocationcheck" class="error"></span>
         </div>
         <div class="title">
             <span class="infotitle"></span><textarea name="bookdesc" class="required" placeholder="书本详情"></textarea><span id="bookdesccheck" class="error"></span>

@@ -21,7 +21,7 @@
         <div>
             <span id="labellogin">学生登录</span><br>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="usernameinput" name="username" placeholder="用户名 "/>
+                    <input type="text" class="form-control" autofocus id="usernameinput" name="username" placeholder="用户名 "/>
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control" id="passwordinput" name="password" placeholder="密码"/>

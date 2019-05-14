@@ -15,7 +15,7 @@
 <%
     request.setCharacterEncoding("utf-8");
     if(session.getAttribute("adminname") == null){
-        response.sendRedirect("/Library/index.jsp");
+        response.sendRedirect("./damin.jsp");
     }
 %>
 <form action="BookAction?action=addtemp" onsubmit="return formcheck()" method="post">

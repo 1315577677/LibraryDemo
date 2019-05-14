@@ -23,10 +23,10 @@
 <body id="back">
 <%
     request.setCharacterEncoding("utf-8");
-    if(session.getAttribute("reader") == null){
-        response.sendRedirect("index.jsp");
+    if(session.getAttribute("reader") == null) {
+        response.sendRedirect("./index.jsp");
     }
-    Cookie cookie= new Cookie("cis","0");
+    //Cookie cookie= new Cookie("cis","0");
 %>
 <%@include file="nav.jsp"%>
 </body>

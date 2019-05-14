@@ -23,7 +23,7 @@
 <%
     request.setCharacterEncoding("utf-8");
     if(session.getAttribute("adminname") == null){
-        response.sendRedirect("/Library/index.jsp");
+        response.sendRedirect("./damin.jsp");
     }
 %>
 <%

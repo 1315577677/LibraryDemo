@@ -13,7 +13,7 @@
 <%
     request.setCharacterEncoding("utf-8");
     if(session.getAttribute("reader") == null){
-        response.sendRedirect("index.jsp");
+        response.sendRedirect("./index.jsp");
     }
 
 %>

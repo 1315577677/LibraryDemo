@@ -1,7 +1,6 @@
 package com.dbconn.entity;
 import Entity.Reader;
 import com.dbconn.tool.DBConnect;
-import com.dbconn.entity.DBIO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -53,6 +52,8 @@ public class DBReader extends DBConnect{
                 reader.setStatus(rs.getInt("status"));
                 reader.setGrade(rs.getString("grade"));
                 reader.setClassnum(rs.getString("classnum"));
+                reader.setServer(rs.getInt("server"));
+                reader.setUUID(rs.getString("UUID"));
                 return reader;
             }
 
@@ -117,7 +118,7 @@ public class DBReader extends DBConnect{
             int i = 0;
             Connection conn = super.getConnection();
             PreparedStatement pst = null;
-            String sql = "insert into reader (username, password, name, sex, status, mail, tel, grade, classnum)values(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            String sql = "insert into reader (username, password, name, sex, status, mail, tel, grade, classnum,server,UUID)values(?, ?, ?, ?, ?, ?, ?, ?, ?,?,?)";
             pst = conn.prepareStatement(sql);
             pst.setString(1, reader.getUsername());
             pst.setString(2, reader.getPassword());
@@ -128,6 +129,8 @@ public class DBReader extends DBConnect{
             pst.setString(7, reader.getTel());
             pst.setString(8, reader.getGrade());
             pst.setString(9, reader.getClassnum());
+            pst.setInt(10,0);
+            pst.setString(11, reader.getUUID());
             i = pst.executeUpdate();
 
         } catch (Exception e) {
@@ -159,6 +162,43 @@ public class DBReader extends DBConnect{
             while (rs.next()){
                 return true;
             }
+        }catch ( Exception e){
+            e.printStackTrace();
+        }
+
+        return false;
+    }
+    public int updatastatus(String id){
+        int i=0;
+        try {
+
+            Connection conn = super.getConnection();
+            String sql = "update reader set server=1 where username="+id+"";
+            PreparedStatement pst = null;
+            ResultSet rs = null;
+            pst=conn.prepareStatement(sql);
+            i=pst.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return i;
+    }
+    public boolean mailstatus(String id,String UUID){
+        try {
+            int i=0;
+            Connection conn = super.getConnection();
+            String sql = "select * from reader where username="+id+" and UUID='"+UUID+"'";
+            PreparedStatement pst = null;
+            ResultSet rs = null;
+            pst = conn.prepareStatement(sql);
+            rs=pst.executeQuery();
+            if(rs.next()){
+            if (updatastatus(id)==0){
+                return false;
+            }else{
+                return true;
+            }}
         }catch ( Exception e){
             e.printStackTrace();
         }

@@ -11,8 +11,24 @@ public class Reader {
     private String tel;
     private String classnum;
     private int borrow;
-
+    private  int server;
+    private   String UUID;
     public Reader() {
+    }
+    public String getUUID() {
+        return UUID;
+    }
+
+    public void setUUID(String UUID) {
+        this.UUID = UUID;
+    }
+
+    public int getServer() {
+        return server;
+    }
+
+    public void setServer(int server) {
+        this.server = server;
     }
 
     public String getUsername() {

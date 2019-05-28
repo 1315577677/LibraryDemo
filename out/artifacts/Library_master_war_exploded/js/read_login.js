@@ -56,6 +56,9 @@ function logincheckResult(){
         if (usernameinput == "" && passwordinput == ""){
             document.getElementById("checkinfo").innerHTML = "用户名和密码不能为空";
         }
+        if(data == "unpass"){
+            document.getElementById("checkinfo").innerHTML = "用户未激活无法登陆";
+        }
 
         if(document.getElementById("checkinfo").innerHTML == ""){
             window.location.href="ReadMain.jsp";

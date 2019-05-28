@@ -60,6 +60,17 @@
         return false;
 
     }
+    function checkmail() {
+        var mail = document.getElementById("mail").value;
+        if (ismail(mail)){
+            document.getElementById("mailcheck").innerHTML = "";
+            return true;
+        } else {
+            document.getElementById("mailcheck").innerHTML = "请输正确的邮箱";
+        }
+        return false;
+
+    }
 
 
     function isPasswd(s)
@@ -80,6 +91,11 @@
         if (!patrn.exec(s)) return false;
         return true;
 
+    }
+    function ismail(s) {
+        var patrn=/^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/;
+        if (!patrn.exec(s)) return false;
+        return true;
     }
     function formcheck() {
       return  check_pass()&&checkpasswordleng()&&checkusernameleng()&&checkname()&&checktel()&&bookcheckResult();
@@ -111,7 +127,7 @@
             <span class="infotitle"></span><input id="name" class="required" name="name" onblur="checkname()" placeholder="名字"><span class="error" id="namecheck"></span>
         </div>
         <div class="size">
-            <span class="infotitle"></span><input type="email" class="required" name="mail"  placeholder="邮箱"><span ></span>
+            <span class="infotitle"></span><input  id="mail" type="email" class="required"onblur="checkmail()"name="mail"  placeholder="邮箱"><span class="error" id="mailcheck"></span>
         </div>
         <div class="size">
             <span class="infotitle"></span><input type="tel" class="required" name="tel" id="tel" placeholder="电话" onblur="checktel()"><span class="error" id="telcheck"></span>
@@ -144,7 +160,7 @@
             <input style="width:10px"  type="radio" name="sex" value="男" checked/>男  <input style="width:10px" type="radio" name="sex" value="女"/>女
         </div>
         <div class="button">
-            <button type="submit" class="btn btn-success" href="index.jps">完成注册</button>
+            <button type="submit" class="btn btn-success">完成注册</button>
         </div>
     </div>
     </div>

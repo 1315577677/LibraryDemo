@@ -43,9 +43,9 @@ public class Sendmail {
         //指明邮件的收件人，现在发件人和收件人是一样的，那就是自己给自己发
         message.setRecipient(Message.RecipientType.TO, new InternetAddress(reader.getMail()));
         //邮件的标题
-        message.setSubject("网上图书管");
+        message.setSubject("CDUESTC在线借还图书系统");
         //邮件的文本内容
-        message.setContent("您好"+reader.getName()+"：请点击以下链接激活您的账户，如不是本人操作请忽略<a href='http://localhost:8080/Library_master_war_exploded/Resiger?action=mailcheck&username="+reader.getUsername()+"&UUID="+reader.getUUID()+"'>http://localhost:8080/Library_master_war_exploded/Resiger?action=mailcheck&username="+reader.getUsername()+"&UUID="+reader.getUUID()+"</a>", "text/html;charset=UTF-8");
+        message.setContent("您好"+reader.getName()+"：请点击以下链接激活您的账户，如不是本人操作请忽略<br/><a href='http://localhost:8080/Library_master_war_exploded/Resiger?action=mailcheck&username="+reader.getUsername()+"&UUID="+reader.getUUID()+"'>http://localhost:8080/Library_master_war_exploded/Resiger?action=mailcheck&username="+reader.getUsername()+"&UUID="+reader.getUUID()+"</a>", "text/html;charset=UTF-8");
         //返回创建好的邮件对象
         return message;
     }

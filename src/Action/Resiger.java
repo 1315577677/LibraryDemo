@@ -56,7 +56,7 @@ public class Resiger extends HttpServlet {
         try {
             Sendmail smt=new Sendmail(reader);
         } catch (Exception e) {
-            e.printStackTrace();
+            request.getRequestDispatcher("./error.jsp").forward(request,response);
         }
         request.getRequestDispatcher("./load.jsp").forward(request,response);
     }

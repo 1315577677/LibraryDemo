@@ -65,7 +65,10 @@ public class LoginAction extends HttpServlet {
         reader=rdao.login(username,password);
         if(reader!=null){
             session.setAttribute("reader",reader );
-            request.getRequestDispatcher("/nav.jsp").forward(request, response);
+            if(reader.getServer()==0) {
+                out.write("unpass");
+            }else{
+            request.getRequestDispatcher("/nav.jsp").forward(request, response);}
         }
         else{
             out.write("false");

@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/login.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
+<%--<link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">--%>
 <script src="${pageContext.request.contextPath}/js/jquery-3.2.1.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/read_login.js"></script>
 <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
@@ -18,8 +18,8 @@
 <body id="back">
 <div class="welcome">
     <div class="loginform1">
-        <div>
-            <span id="labellogin">学生登录</span><br>
+        <div id="form">
+            <span id="labellogin" style="font-family: 幼圆; font-weight: 900">学生登录</span><br>
                 <div class="form-group">
                     <input type="text" class="form-control" autofocus id="usernameinput" name="username" placeholder="用户名 "/>
                 </div>
@@ -28,10 +28,10 @@
                 </div>
             <button id="loginbutton" class="btn btn-primary" onclick="logincheck()">登录</button>
             <div class="errorsubmit" id="checkinfo"></div>
-            <table>
+            <table align="center">
                 <tr>
                     <td id="resiger">没有账号？<a style="color:#007bff" href="ReaderResiger.jsp">注册</a></td>
-                    <td><a style="color: gray" href="damin.jsp">我是管理员</a></td>
+                    <td><a style="color: gray" href="admin.jsp">我是管理员</a></td>
                 </tr>
             </table>
         </div>

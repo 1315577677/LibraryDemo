@@ -19,7 +19,7 @@
 <%
     request.setCharacterEncoding("utf-8");
     if(session.getAttribute("adminname") == null){
-        response.sendRedirect("./damin.jsp");
+        response.sendRedirect("./admin.jsp");
     }
 %>
 <jsp:include page="nav.html"/>

@@ -1,7 +1,6 @@
 .bookinfo{
-    /*border: 1px solid #4e555b;*/
-    /*border-radius: 20px;*/
-    padding: 20px;
+
+    /*padding: 20px;*/
     /*margin: 100px auto;*/
     width: 366px;
     font-size: 13px;
@@ -10,11 +9,11 @@
 .required{
     height: 40px;
     margin: 6px 10px;
-    /*设置input输入框的边框*/
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 0px;
+    /*input输入框的边框*/
+    /*border-top: 0px;*/
+    /*border-left: 0px;*/
+    /*border-right: 0px;*/
+    /*border-bottom: 0px;*/
     color: #8590A6;
     font-size: 14px;
 }
@@ -35,13 +34,10 @@ input{
 }
 
 #resigerbutton{
-    margin-top: 20px;
     width: 340px;
 
     /*margin-left: 4px;*/
     height: 38px;
-    border:1px #4f8fbe;
-    border-radius: 4px;
     background-color: #4f8fbe;
     color: #ffffff;
 }
@@ -52,14 +48,10 @@ textarea{
     resize:none;
 }
 
-/*.infotitle{*/
-/*    font-family: "仿宋";*/
-/*    font-size:25px;*/
-/*}*/
 
-body{
+.mapBG{
     background-image: url("../image/mapBG.jpg");
     background-size:100% auto;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
 

@@ -6,6 +6,7 @@ import com.dbconn.entity.DBIO;
 import Entity.Log;
 import com.dbconn.entity.DBReader;
 import Entity.Reader;
+import server.Sendmail;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
@@ -23,40 +24,110 @@ public class ReaderAction extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
         String action = request.getParameter("action");
-        if(action.equals("QueryReaderById")) {
+        if("QueryReaderById".equals(action)) {
             this.QueryReaderById(request, response);
         }
-        if(action.equals("QueryReaderUserNameById")) {
+        if("QueryReaderUserNameById".equals(action)) {
             this.QueryReaderUserNameById(request, response);
         }
-        else if (action.equals("GetBorrowListById")){
+        else if ("GetBorrowListById".equals(action)){
             this.GetBorrowListById(request, response);
         }
 
-        else if (action.equals("GetAllReader")){
+        else if ("GetAllReader".equals(action)){
             this.GetAllReader(request, response);
         }
-        else if(action.equals("SetBlackList")){
+        else if("SetBlackList".equals(action)){
             this.SetBlackList(request, response);
         }
-        else if(action.equals("addreader")){
+        else if("addreader".equals(action)){
             this.addreader(request, response);
         }
-        else if(action.equals("readerdelete")){
+        else if("readerdelete".equals(action)){
             this.readerdelete(request,response);
         }
-        else if(action.equals("resiger")){
+        else if("resiger".equals(action)){
             this.resiger(request,response);
         }
 
-        else if(action.equals("resigerreader")){
+        else if("resigerreader".equals(action)){
             this.resiger(request,response);
         }
-        else if(action.equals("ser")){
+        else if("ser".equals(action)){
             this.ser(request,response);
         }
+        else if("chapw".equals(action)){
+            this.chapw(request,response);
+        }
+        else if("mailcheck".equals(action)){
+            this.mailcheck(request,response);
+        }
+        else if("changepassword".equals(action)){
+            this.changepassword(request,response);
+        }
+
     }
-    
+
+    private void changepassword(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
+       String password= request.getParameter("password");
+       String UUID = request.getParameter("UUID");
+       DBReader reader = new DBReader();
+      if(reader.chengpassword(UUID,password)){
+          response.setContentType("text/html;charset=utf-8");//设置编码格式，以防前端页面出现中文乱码
+          PrintWriter printWriter = response.getWriter();//创建输出流
+          printWriter.println("<h1>修改成功</h1>");
+      }else{
+          response.setContentType("text/html;charset=utf-8");//设置编码格式，以防前端页面出现中文乱码
+          PrintWriter printWriter = response.getWriter();//创建输出流
+          printWriter.println("<h1>修改失败</h1>");
+      }
+
+
+    }
+
+    private void mailcheck(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+       String username = request.getParameter("username");
+       String UUID = request.getParameter("UUID");
+       DBReader check = new DBReader();
+       Reader reader =new Reader();
+       reader.setUsername(username);
+       reader.setUUID(UUID);
+        HttpSession session = request.getSession();
+        session.setAttribute("check",reader);
+       if(check.mailstatus(username,UUID)){
+           request.getRequestDispatcher("changepassword.jsp").forward(request,response);
+       }else{
+           response.setContentType("text/html;charset=utf-8");//设置编码格式，以防前端页面出现中文乱码
+           PrintWriter printWriter = response.getWriter();//创建输出流
+           printWriter.println("<h1>请先激活你的账号</h1>");
+       }
+
+    }
+
+
+    private void chapw(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        String username = request.getParameter("username");
+        String mail = request.getParameter("mail");
+        DBReader readerdao = new DBReader();
+        Reader reader = new Reader();
+        if(null!=readerdao.checkmail(username,mail).getUUID()){
+            Sendmail sendmail = new Sendmail();
+            reader=readerdao.checkmail(username,mail);
+            try {
+                sendmail.Sendcheckmail(2,reader);
+                response.setContentType("text/html;charset=utf-8");//设置编码格式，以防前端页面出现中文乱码
+                PrintWriter printWriter = response.getWriter();//创建输出流
+                printWriter.println("<h1>邮件已发出，请到邮箱修改您的密码</h1>");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }else{
+            request.getRequestDispatcher("error.jsp").forward(request,response);
+        }
+
+
+    }
+
     protected void QueryReaderById(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         String readerid = request.getParameter("readerid");
         DBReader readerDao = new DBReader();

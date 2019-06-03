@@ -1,14 +1,36 @@
 package com.dbconn.entity;
 import Entity.Reader;
 import com.dbconn.tool.DBConnect;
-import com.dbconn.entity.DBIO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
+
 public class DBReader extends DBConnect{
+    public Reader checkmail(String username,String mail){
+        Connection conn = null;
+        Reader reader = new Reader();
+        try {
+            conn = super.getConnection();
+            String sql = "SELECT * FROM reader WHERE mail=? and username=?";
+            PreparedStatement pst = conn.prepareStatement(sql);;
+            pst.setString(1,mail);
+            pst.setString(2,username);
+            ResultSet rs = pst.executeQuery();
+            if(rs.next()) {
+            reader.setMail(rs.getString("mail"));
+            reader.setUsername(rs.getString("username"));
+            reader.setName(rs.getString("name"));
+            reader.setUUID(rs.getString("UUID"));
+            };
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return reader;
+    }
     public Reader QueryReaderById(String id){
         Reader reader = new Reader();
         DBIO ioDao = new DBIO();
@@ -53,6 +75,8 @@ public class DBReader extends DBConnect{
                 reader.setStatus(rs.getInt("status"));
                 reader.setGrade(rs.getString("grade"));
                 reader.setClassnum(rs.getString("classnum"));
+                reader.setServer(rs.getInt("server"));
+                reader.setUUID(rs.getString("UUID"));
                 return reader;
             }
 
@@ -117,7 +141,7 @@ public class DBReader extends DBConnect{
             int i = 0;
             Connection conn = super.getConnection();
             PreparedStatement pst = null;
-            String sql = "insert into reader (username, password, name, sex, status, mail, tel, grade, classnum)values(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            String sql = "insert into reader (username, password, name, sex, status, mail, tel, grade, classnum,server,UUID)values(?, ?, ?, ?, ?, ?, ?, ?, ?,?,?)";
             pst = conn.prepareStatement(sql);
             pst.setString(1, reader.getUsername());
             pst.setString(2, reader.getPassword());
@@ -128,6 +152,8 @@ public class DBReader extends DBConnect{
             pst.setString(7, reader.getTel());
             pst.setString(8, reader.getGrade());
             pst.setString(9, reader.getClassnum());
+            pst.setInt(10,0);
+            pst.setString(11, reader.getUUID());
             i = pst.executeUpdate();
 
         } catch (Exception e) {
@@ -164,6 +190,61 @@ public class DBReader extends DBConnect{
         }
 
         return false;
+    }
+    public int updatastatus(String UUID){
+        int i=0;
+        try {
+
+            Connection conn = super.getConnection();
+            String sql = "update reader set server=1 where UUID=?";
+            PreparedStatement pst =conn.prepareStatement(sql);
+            pst.setString(1,UUID);
+            i = pst.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return i;
+    }
+    public boolean mailstatus(String username,String UUID){
+        try {
+            int i=0;
+            Connection conn = super.getConnection();
+            String sql = "select * from reader where username='"+username+"' and UUID='"+UUID+"'";
+            PreparedStatement pst = null;
+            ResultSet rs = null;
+            pst = conn.prepareStatement(sql);
+            rs=pst.executeQuery();
+            if(rs.next()){
+            if (updatastatus(UUID)==0){
+                return false;
+            }else{
+                return true;
+            }}
+        }catch ( Exception e){
+            e.printStackTrace();
+        }
+
+        return false;
+    }
+
+    public boolean chengpassword(String UUID,String password ){
+        try {
+            int i=0;
+            Connection conn = super.getConnection();
+            String sql = "update reader set password=? where UUID=?";
+            PreparedStatement pst = null;
+            ResultSet rs = null;
+            pst = conn.prepareStatement(sql);
+            pst.setString(1,password);
+            pst.setString(2,UUID);
+            i=pst.executeUpdate();
+            if(i==0)return false;
+        }catch ( Exception e){
+            e.printStackTrace();
+        }
+
+        return true;
     }
 
 }

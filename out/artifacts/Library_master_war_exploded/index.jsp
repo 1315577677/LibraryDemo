@@ -30,8 +30,13 @@
             <div class="errorsubmit" id="checkinfo"></div>
             <table>
                 <tr>
-                    <td id="resiger">没有账号？<a style="color:#007bff" href="ReaderResiger.jsp">注册</a></td>
-                    <td><a style="color: gray" href="damin.jsp">我是管理员</a></td>
+                    <td id="resiger">
+                        <a style="color:#007bff" href="ReaderResiger.jsp">没有账号？</a>
+                        <a style="color:#007bff" href="chapw.jsp">忘记密码？</a>
+                    </td>
+                    <td>
+                        <a style="color: gray" href="damin.jsp">我是管理员</a>
+                    </td>
                 </tr>
             </table>
         </div>

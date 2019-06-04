@@ -1,0 +1,25 @@
+li a{
+    color: white;
+}
+
+#logo{
+    color:white ;
+    /*background-color:#2473ab;*/
+    margin: 14px 0px 0px 30px;
+    padding: 0px;
+}
+
+#logoutLogo{
+    background-image: url(../image/logout25px.png);
+    height: 25px ;background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 12px;
+}
+
+ul{
+    padding-top: 10px;
+}
+
+nav{
+    background-color: #2473ab;
+}

@@ -1,0 +1,57 @@
+.bookinfo{
+
+    /*padding: 20px;*/
+    /*margin: 100px auto;*/
+    width: 366px;
+    font-size: 13px;
+    text-align: center;
+}
+.required{
+    height: 40px;
+    margin: 6px 10px;
+    /*input输入框的边框*/
+    /*border-top: 0px;*/
+    /*border-left: 0px;*/
+    /*border-right: 0px;*/
+    /*border-bottom: 0px;*/
+    color: #8590A6;
+    font-size: 14px;
+}
+
+.title{
+    text-align:center;
+    font-size:30px;
+    font-family: "宋体";
+}
+
+input{
+    width:346px;
+    height: 10px;
+}
+
+.error{
+    color:red;
+}
+
+#resigerbutton{
+    width: 340px;
+
+    /*margin-left: 4px;*/
+    height: 38px;
+    background-color: #4f8fbe;
+    color: #ffffff;
+}
+
+textarea{
+    width:360px;
+    height:100px;
+    resize:none;
+}
+
+
+.mapBG{
+    background-image: url("../image/mapBG.jpg");
+    background-size:100% auto;
+    background-repeat: no-repeat;
+}
+

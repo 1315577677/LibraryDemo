@@ -18,11 +18,11 @@
 <head>
     <title>登录成功</title>
 </head>
-<body id="back">
+<body style="background-image: url(image/mapBG.jpg)">
 <%
     request.setCharacterEncoding("utf-8");
     if(session.getAttribute("adminname") == null){
-        response.sendRedirect("./damin.jsp");
+        response.sendRedirect("./admin.jsp");
     }
 %>
 <jsp:include page="nav.html"/>

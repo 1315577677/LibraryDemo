@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/login.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
+<%--<link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">--%>
 <script src="${pageContext.request.contextPath}/js/jquery-3.2.1.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/loginScript.js"></script>
 <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
@@ -15,12 +15,12 @@
 <head>
     <title>管理员登录</title>
 </head>
+
 <body id="back">
 <div class="welcome">
-
-    <div class="loginform">
-        <div>
-            <span id="labellogin" style="color: white">管理员登录</span><br>
+    <div class="loginform1">
+        <div id="form">
+            <span id="labellogin" style=" font-family: 幼圆; font-weight: 900">管理员登录</span><br>
             <div class="form-group">
                 <input type="text" class="form-control" id="usernameinput" autofocus name="username" placeholder="用户名 "/>
             </div>

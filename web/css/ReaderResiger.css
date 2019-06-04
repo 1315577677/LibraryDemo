@@ -1,0 +1,65 @@
+.bookinfo{
+    border-radius: 20px;
+    padding-bottom: 30px;
+    margin: 100px auto;
+    width: 366px;
+    font-size: 13px;
+    text-align: center;
+
+}
+.required{
+    height: 40px;
+    margin: 6px 10px;
+    border:1px solid #223852;
+    border-radius:4px;
+    color: #8590A6;
+    font-size: 14px;
+}
+
+.title{
+    text-align:center;
+    font-size:30px;
+    font-family: "宋体";
+}
+
+input{
+    width:346px;
+    height: 10px;
+    /*margin-right:5px;*/
+}
+
+.error{
+    color:red;
+}
+
+#resigerbutton{
+    margin-top: 20px;
+    width: 340px;
+
+    /*margin-left: 4px;*/
+    height: 38px;
+    border:1px #4f8fbe;
+    border-radius: 4px;
+    background-color: #4f8fbe;
+    color: #ffffff;
+}
+
+textarea{
+    width:360px;
+    height:100px;
+    resize:none;
+}
+
+.mapBG{
+    background-image: url("../image/mountain（logo）.png");
+    background-size:100% auto;
+}
+
+.loginform1{
+    width: 1250px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background:hsla(0,0%,100%,.25) border-box ;
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.3);
+    box-shadow: 0 0 0 1px hsla(0,0%,100%,.3) inset, 0 0.5em 1em rgba(0,0,0,0.6);
+}

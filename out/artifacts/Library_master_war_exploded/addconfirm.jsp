@@ -2,7 +2,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/addbook.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/addbook1.css">
 <script src="${pageContext.request.contextPath}/js/jquery-3.2.1.min.js"></script>
 <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
@@ -15,7 +15,7 @@
 <%
     request.setCharacterEncoding("utf-8");
     if(session.getAttribute("adminname") == null){
-        response.sendRedirect("./damin.jsp");
+        response.sendRedirect("./admin.jsp");
     }
     ArrayList<Book> addbooklist = (ArrayList<Book>)session.getAttribute("addbooklist");
 %>

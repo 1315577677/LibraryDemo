@@ -1,0 +1,44 @@
+.input{
+    border: 0px;
+    margin-bottom: 20px;
+    width: 340px;
+    height: 48px;
+    border-radius: 4px;
+}
+.loginform1{
+    text-align: center;
+    color: #4f8fbe;
+    width: 410px;
+    margin: 200px auto;
+    border-radius: 20px;
+    background:hsla(0,0%,100%,.25) border-box ;
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.3);
+    box-shadow: 0 0 0 1px hsla(0,0%,100%,.3) inset, 0 0.5em 1em rgba(0,0,0,0.6);
+}
+.mapBG{
+    background-image: url("../image/mountain（logo）.png");
+    background-size:100% auto;
+}
+#loginbutton{
+    margin-top: 20px;
+    width: 340px;
+    border: 1px;
+    /*margin-left: 4px;*/
+    height: 38px;
+    border-radius: 4px;
+    background-color: #4f8fbe;
+    color: #ffffff;
+}
+#loginbutton:hover{
+    background:#2875AB;
+}
+#loginbutton:active{
+    background:#4f8fbe;
+}
+
+#insidebox{
+    width: 340px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}

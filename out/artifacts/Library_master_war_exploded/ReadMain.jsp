@@ -20,7 +20,7 @@
 <head>
     <title>学生账户</title>
 </head>
-<body id="back">
+<body style="background-image: url(image/mapBG.jpg)">
 <%
     request.setCharacterEncoding("utf-8");
     if(session.getAttribute("reader") == null) {
@@ -29,5 +29,6 @@
     //Cookie cookie= new Cookie("cis","0");
 %>
 <%@include file="nav.jsp"%>
+
 </body>
 </html>

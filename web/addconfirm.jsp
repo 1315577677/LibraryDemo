@@ -10,7 +10,7 @@
 <head>
     <title>书本添加确认</title>
 </head>
-<body style="background-color:#F0F0F0">
+<body style="background-image: url(./image/mapBG.jpg)">
 <jsp:include page="nav.html"/>
 <%
     request.setCharacterEncoding("utf-8");
@@ -19,7 +19,7 @@
     }
     ArrayList<Book> addbooklist = (ArrayList<Book>)session.getAttribute("addbooklist");
 %>
-<table class="table">
+<table class="table" style="text-align: center">
     <thead>
     <tr>
         <th>书本编号</th>

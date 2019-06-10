@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page pageEncoding="utf-8"%>
 <%--<link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">--%>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/addreader.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/ReaderResiger.css">
 <script src="${pageContext.request.contextPath}/js/res_reader.js"></script>
 <script src="${pageContext.request.contextPath}/js/jquery-3.2.1.min.js"></script>
 <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
@@ -94,11 +94,6 @@
 
 
 </script>
-<html>
-<head>
-    <title>读者添加</title>
-</head>
-<body class="mapBG">
 <jsp:include page="nav.html"/>
 <%
     request.setCharacterEncoding("utf-8");
@@ -106,15 +101,19 @@
         response.sendRedirect("./admin.jsp");
     }
 %>
-
+<html>
+<head>
+    <title>读者添加</title>
+</head>
+<body style="background-image: url(./image/mapBG.jpg)">
 <form action="ReaderAction?action=addreader"  onsubmit="return formcheck()" method="post">
-    <div>
+    <div id="addreader">
         <div class="bookinfo">
-            <div class="size" style="text-align: center">
-                <h3>读者添加</h3>
+            <div class="size" style="text-align: center;color:#4f8fbe;font-family: 幼圆; font-weight: 900; font-size: 35px;padding-top: 20px;padding-bottom: 20px">
+                读者注册
             </div>
             <div class="size">
-                <span class="infotitle"></span><input name="username" class="required" id="username" onkeyup="readercheck()"  onblur="checkusernameleng()" autofocus placeholder="用户名：6-20个字母、数字、下划线" ><span class="error" id="usernamecheck"></span>
+                <span class="infotitle"></span><input name="username" class="required" autofocus id="username" onkeyup="readercheck()"  onblur="checkusernameleng()" placeholder="用户名：6-20个字母、数字、下划线" ><span class="error" id="usernamecheck"></span>
             </div>
             <div class="size ">
                 <span class="infotitle"></span><input id="pass1" type="password" class="required" name="password" placeholder="密码：6-20个字母、数字、下划线"onkeyup="checkpasswordleng()"  ><span  class="error"id="checkpass1" ></span>
@@ -126,13 +125,13 @@
                 <span class="infotitle"></span><input id="name" class="required" name="name" onblur="checkname()" placeholder="名字"><span class="error" id="namecheck"></span>
             </div>
             <div class="size">
-                <span class="infotitle"></span><input type="email" class="required" name="mail"  placeholder="邮箱"><span ></span>
+                <span class="infotitle"></span><input  id="mail" type="email" class="required"onblur="checkmail()"name="mail"  placeholder="邮箱"><span class="error" id="mailcheck"></span>
             </div>
             <div class="size">
                 <span class="infotitle"></span><input type="tel" class="required" name="tel" id="tel" placeholder="电话" onblur="checktel()"><span class="error" id="telcheck"></span>
             </div>
-            <div class="size">
-                系别<select style="width: 110px"  name="grade">
+            <div class="size" style="font-family: 'Adobe 黑体 Std R'">
+                系别<select style="width: 110px" name="grade">
                 <option value="计算机">计算机</option>
                 <option value="云计算">云计算</option>
                 <option value="图艺">图艺</option>
@@ -140,7 +139,7 @@
                 <option value="文理">文理</option>
                 <option value="电气">电气</option>
             </select>
-                班级<select style="width: 110px"name="classnum">
+                班级<select style="width: 110px" name="classnum">
                 <option value="一">一班</option>
                 <option value="二">二班</option>
                 <option value="三">三班</option>
@@ -154,16 +153,13 @@
                 <option value="十一">十一班</option>
                 <option value="十二">十二班</option>
             </select>
-                性别 <select name="sex" >
+                性别<select name="sex">
                 <option value="男">男</option>
                 <option value="女">女</option>
             </select>
-
             </div>
-<%--            <div>--%>
-<%--                <input style="width:10px"  type="radio" name="sex" value="男" checked/>男  <input style="width:10px" type="radio" name="sex" value="女"/>女--%>
-<%--            </div>--%>
             <div class="button">
+                <%--<button id="resigerbutton" type="submit"  name="over" value="1" href="index.jps">完成注册</button>--%>
                 <button type="submit" class="btn btn-success" name="over" value="1">完成添加</button>
                 <button type="submit" class="btn btn-default" name="over" value="0" id="send">继续添加</button>
             </div>
@@ -172,6 +168,5 @@
 </form>
 </body>
 </html>
-
 
 

@@ -40,7 +40,7 @@ function bookcheckResult(){
     if (xmlHttp.readyState==4 && xmlHttp.status==200){
         var data= xmlHttp.responseText;
         if(data=="true"){
-            document.getElementById("usernamecheck").innerHTML = " *该用户已存在";
+            document.getElementById("usernamecheck").innerHTML = "该用户已存在";
             return false;
         }else {
             document.getElementById("usernamecheck").innerHTML = "";

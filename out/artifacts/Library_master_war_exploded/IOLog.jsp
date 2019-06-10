@@ -15,7 +15,7 @@
 <head>
     <title>图书借进归还日志</title>
 </head>
-<body style="background-color:#F0F0F0">
+<body style="background-image: url(./image/mapBG.jpg)">
 <%
     request.setCharacterEncoding("utf-8");
     if(session.getAttribute("adminname") == null){
@@ -23,7 +23,7 @@
     }
 %>
 <jsp:include page="nav.html"/>
-<table class="table">
+<table class="table" style="text-align: center">
     <thead>
     <tr>
         <th>书本编号(书名)</th>

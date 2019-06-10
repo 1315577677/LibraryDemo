@@ -28,7 +28,7 @@
 <body style="background-color:#F0F0F0">
 <jsp:include page="nav.html"/>
 
-<table class="table">
+<table class="table" style="text-align: center">
     <thead>
     <tr>
         <th>读者用户名</th>

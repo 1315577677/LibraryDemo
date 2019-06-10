@@ -11,7 +11,7 @@ li a{
 
 #logoutLogo{
     background-image: url(../image/logout25px.png);
-    height: 25px ;background-size: 100%;
+    height: 41px ;background-size: 100%;
     background-repeat: no-repeat;
     margin-top: 12px;
 }
@@ -22,4 +22,17 @@ ul{
 
 nav{
     background-color: #2473ab;
+}
+#search1{
+    outline: none;
+    border: 0px;
+    width:40px;
+    height:40px;
+    background-image: url(../image/search40px.png);
+    background-color:#2473ab;
+    background-repeat:no-repeat;
+}
+#search1:hover{
+    outline: none;
+    background-color:#2463ab;
 }

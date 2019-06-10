@@ -21,9 +21,9 @@
 <head>
     <title>图书管理</title>
 </head>
-<body style="background-color:#F0F0F0">
+<body style="background-image: url(./image/mapBG.jpg)">
 <jsp:include page="nav.jsp"/>
-<table class="table">
+<table class="table" style="text-align: center">
     <thead>
     <tr>
     <tr>

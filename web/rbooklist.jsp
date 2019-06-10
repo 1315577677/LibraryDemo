@@ -64,9 +64,9 @@
             var getreaderstatus = parameters[2];
             var getreaderborrow = parameters[3];
             if (getreaderstatus == "异常" && getreadername != "null") {
-                document.getElementById("error").innerHTML = "<p style='color: red'>*用户异常无法借阅,请联系管理员</p>";
+                document.getElementById("error").innerHTML = "<p style='color: red'>用户异常无法借阅,请联系管理员</p>";
             } else if (getreaderborrow == "5") {
-                document.getElementById("error").innerHTML = "<p style='color: red'>*用户借阅过多无法借阅</p>";
+                document.getElementById("error").innerHTML = "<p style='color: red'>用户借阅过多无法借阅</p>";
             } else {
                 document.getElementById("error").innerHTML = "";
             }
@@ -86,10 +86,9 @@
 <head>
     <title>图书管理</title>
 </head>
-<body style="background-color:#F0F0F0">
+<body style="background-image: url(./image/mapBG.jpg)">
 <jsp:include page="ReaderBorrow.jsp"/>
-<div style="height: 16px" id="error"></div>
-<table class="table">
+<table class="table" style="text-align: center">
         <thead>
         <tr>
             <th>书本编号</th>

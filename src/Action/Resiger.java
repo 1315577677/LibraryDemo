@@ -7,7 +7,9 @@ import server.Sendmail;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.*;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(name = "Resiger")
@@ -32,6 +34,7 @@ public class Resiger extends HttpServlet {
 
         }
     private void resiger(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+      int i= 0;
         DBReader bdao = new DBReader();
         Reader reader = new Reader();
 
@@ -52,13 +55,14 @@ public class Resiger extends HttpServlet {
         reader.setClassnum(request.getParameter("classnum"));
 
         reader.setUUID(Rand.generateShortUUID());
-        bdao.addreader(reader);
         try {
             Sendmail smt=new Sendmail();
             smt.Sendcheckmail(1,reader);
         } catch (Exception e) {
             request.getRequestDispatcher("./error.jsp").forward(request,response);
+            i++;
         }
+        if(i==0) bdao.addreader(reader);
         request.getRequestDispatcher("./load.jsp").forward(request,response);
     }
     private void login(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -10,7 +10,7 @@
 <head>
     <title>错误</title>
 </head>
-<body>
+<body style="background-image: url(./image/mapBG.jpg)">
 <h1>未知错误</h1>
 <a href="index.jsp">继续</a>
 </body>

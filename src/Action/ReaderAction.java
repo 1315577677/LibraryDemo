@@ -6,6 +6,7 @@ import com.dbconn.entity.DBIO;
 import Entity.Log;
 import com.dbconn.entity.DBReader;
 import Entity.Reader;
+import com.dbconn.tool.Rand;
 import server.Sendmail;
 
 import javax.servlet.ServletException;
@@ -101,7 +102,6 @@ public class ReaderAction extends HttpServlet {
            PrintWriter printWriter = response.getWriter();//创建输出流
            printWriter.println("<h1>请先激活你的账号</h1>");
        }
-
     }
 
 
@@ -200,6 +200,13 @@ public class ReaderAction extends HttpServlet {
 
             reader.setClassnum(request.getParameter("classnum"));
 
+            reader.setUUID(Rand.generateShortUUID());
+            try {
+            Sendmail smt=new Sendmail();
+            smt.Sendcheckmail(1,reader);
+             } catch (Exception e) {
+             request.getRequestDispatcher("./error.jsp").forward(request,response);
+            }
             bdao.addreader(reader);
         if(next.equals("0"))
             request.getRequestDispatcher("/AddReader.jsp").forward(request, response);

@@ -16,7 +16,7 @@
                 document.getElementById("mailC").innerHTML = "";
                 return true;
             }else{
-                document.getElementById("mailC").innerHTML = "用户名长度或格式不合法";
+                document.getElementById("mailC").innerHTML = "<p style='color: red'>用户名或用户名长度不合法</p>";
             }
             return false;
         }
@@ -26,7 +26,7 @@
                 document.getElementById("mailC").innerHTML = "";
                 return true;
             } else {
-                document.getElementById("mailC").innerHTML = "请输正确的邮箱";
+                document.getElementById("mailC").innerHTML = "<p style='color: red'>请输入正确的邮箱</p>";
             }
             return false;
 

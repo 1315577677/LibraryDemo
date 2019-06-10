@@ -109,7 +109,7 @@
 </head>
 <body class="mapBG ">
 <form action="Resiger?action=resiger"  onsubmit="return formcheck()" method="post">
-    <div class="loginform1">
+    <div id="addreader">
     <div class="bookinfo">
         <div class="size" style="text-align: center;color:#4f8fbe;font-family: 幼圆; font-weight: 900; font-size: 35px;padding-top: 20px;padding-bottom: 20px">
             读者注册
@@ -171,3 +171,7 @@
 </form>
 </body>
 </html>
+
+
+
+

@@ -24,7 +24,7 @@
         response.sendRedirect("./index.jsp");
     }
 %>
-</body  style="background-color:#F0F0F0">
+</body  style=" background-image: url(./image/mapBG.jpg)">
 <div class="returninfo">
     <div class="title">
         请输入读者用户名

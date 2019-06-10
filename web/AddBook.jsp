@@ -10,7 +10,7 @@
 <head>
     <title>书本添加</title>
 </head>
-<body>
+<body style="background-image: url(./image/mapBG.jpg)">
 <jsp:include page="nav.html"/>
 <%
     request.setCharacterEncoding("utf-8");

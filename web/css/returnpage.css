@@ -1,15 +1,14 @@
 .returninfo{
-	position: absolute;
-	margin-top: 50px;
-	margin-left: 30%;
-	width: 591px;
+	text-align: center;
 }
 
 .title{
-	margin-left:200px;
+	margin: 10px 0px;
+	text-align:center;
 	font-size:30px;
-	font-family:"宋体";
+	font-family: "宋体";
 }
+
 
 .infotitle{
 	font-family:"仿宋";
@@ -20,11 +19,6 @@ button{
 	width:110px;
 }
 
-.button{
-	margin-left:195px;
-	margin-top:50px;
-}
-
 input{
 	width:450px;
 	margin-right:5px;
@@ -32,4 +26,13 @@ input{
 
 .error{
 	color:red;
+}
+
+
+.required{
+	height: 40px;
+	margin: 6px 10px;
+	border:0px;
+	color: #8590A6;
+	font-size: 14px;
 }

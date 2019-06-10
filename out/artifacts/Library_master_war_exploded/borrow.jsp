@@ -16,7 +16,7 @@
 <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 <html>
 <head>
-    <title>书本借出记录登记表</title>
+    <title>图书借出登记</title>
 </head>
 <%
     request.setCharacterEncoding("utf-8");
@@ -28,42 +28,42 @@
 <jsp:include page="nav.html"/>
 <div>
 <div class="borrowinfo">
-    <div class="title">
-        书本借出记录登记表
+    <div class="title"style="color:#4f8fbe;font-family: 幼圆; font-weight: 900; font-size: 35px;">
+        图书借出登记
     </div>
     <form action="IOAction?action=borrow" onsubmit="return errorsubmit()" method="post">
         <div>
-            <span class="infotitle">读者学号：</span><input type="text" autofocus onkeyup="readercheck()" name="readerid" id="readerid"><span id="readeridcheck" class="error"></span>
+            <span class="infotitle">读者学号&nbsp;</span><input type="text" placeholder="" autofocus onkeyup="readercheck()" name="readerid" id="readerid"><span id="readeridcheck" class="error"></span>
         </div>
         <div>
-            <span class="infotitle">读者姓名：</span><input type="text" name="readername" id="readername" disabled>
-        </div> 
-        <div>
-            <span class="infotitle">读者班级：</span><input type="text" name="readername" id="readerclass" disabled>
+            <span class="infotitle">读者姓名&nbsp;</span><input type="text" placeholder="" name="readername" id="readername" disabled>
         </div>
         <div>
-            <span class="infotitle">用户状态：</span><input type="text" name="readername" id="readerstatus" disabled><span id="readerstatuscheck" class="error"></span>
+            <span class="infotitle">读者班级&nbsp;</span><input type="text" placeholder="" name="readername" id="readerclass" disabled>
         </div>
         <div>
-            <span class="infotitle">用户已借：</span><input type="text" name="readerborrow" id="readerborrow" disabled><span id="readerborrowcheck" class="error"></span>
+            <span class="infotitle">用户状态&nbsp;</span><input type="text" placeholder="" name="readername" id="readerstatus" disabled><span id="readerstatuscheck" class="error"></span>
         </div>
         <div>
-            <span class="infotitle">书本编号：</span><input type="text" name="bookid" onkeyup="bookcheck()" id="bookid"><span id="bookidcheck" class="error"></span>
+            <span class="infotitle">用户已借&nbsp;</span><input type="text" placeholder="" name="readerborrow" id="readerborrow" disabled><span id="readerborrowcheck" class="error"></span>
         </div>
         <div>
-            <span class="infotitle">书本名称：</span><input type="text" name="bookname" id="bookname"disabled>
+            <span class="infotitle">书本编号&nbsp;</span><input type="text" placeholder="" name="bookid" onkeyup="bookcheck()" id="bookid"><span id="bookidcheck" class="error"></span>
         </div>
         <div>
-            <span class="infotitle">书本作者：</span><input type="text" name="bookauthor" id="bookauthor" disabled>
+            <span class="infotitle">书本名称&nbsp;</span><input type="text" placeholder="" name="bookname" id="bookname"disabled>
         </div>
         <div>
-            <span class="infotitle">出版单位：</span><input type="text" name="bookpublisher" id="bookpublisher" disabled>
+            <span class="infotitle">书本作者&nbsp;</span><input type="text" placeholder="" name="bookauthor" id="bookauthor" disabled>
         </div>
         <div>
-            <span class="infotitle">书本剩余：</span><input type="text" name="bookremain" id="bookremain" disabled><span id="booknumcheck" class="error"></span>
+            <span class="infotitle">出版单位&nbsp;</span><input type="text" placeholder="" name="bookpublisher" id="bookpublisher" disabled>
         </div>
         <div>
-            <span class="infotitle">借阅时间：</span>
+            <span class="infotitle">书本剩余&nbsp;</span><input type="text" placeholder=""name="bookremain" id="bookremain" disabled><span id="booknumcheck" class="error"></span>
+        </div>
+        <div>
+            <span class="infotitle">借阅时间</span>
             <select name="borrowday">
                 <option value="7">7天</option>
                 <option value="14">14天</option>
@@ -71,9 +71,9 @@
             </select>
         </div>
         <div class="button">
-            <button type="submit" class="btn btn-success " name="over" value="1">提交</button>
-            <button type="reset" class="btn btn-default">重填</button>
-            <button type="submit" class="btn btn-default" name="over" value="0" id="send">继续借书</button>
+            <button type="submit" class="btn" style="background-color: #2473ab;color: #fff" name="over" value="1">提交</button>
+            <button type="reset" class="btn" style="background-color: #ddd">重填</button>
+            <button type="submit" class="btn" style="background-color: #ddd" name="over" value="0" id="send">继续借书</button>
         </div>
     </form>
 </div>

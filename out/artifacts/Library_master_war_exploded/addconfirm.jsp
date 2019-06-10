@@ -56,9 +56,9 @@
     %>
     </tbody>
 </table>
-<div class="button">
-    <button onclick="location.href='BookAction?action=confirm'" class="btn btn-success">确认添加</button>
-    <button onclick="location.href='BookAction?action=truncatetable'" class="btn btn-danger">清空列表</button>
+<div class="button" style="float:right;margin-right: 4%">
+    <button onclick="location.href='BookAction?action=confirm'" class="btn" style="background-color: #2473ab;color: #fff">确认添加</button>
+    <button onclick="location.href='BookAction?action=truncatetable'" class="btn" style="background-color: #ddd">清空列表</button>
 </div>
 </body>
 </html>

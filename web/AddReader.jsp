@@ -130,7 +130,7 @@
             <div class="size">
                 <span class="infotitle"></span><input type="tel" class="required" name="tel" id="tel" placeholder="电话" onblur="checktel()"><span class="error" id="telcheck"></span>
             </div>
-            <div class="size" style="font-family: 'Adobe 黑体 Std R'">
+            <div class="size" style="font-family: 'Adobe 黑体 Std R';margin:10px" >
                 系别<select style="width: 110px" name="grade">
                 <option value="计算机">计算机</option>
                 <option value="云计算">云计算</option>
@@ -158,10 +158,10 @@
                 <option value="女">女</option>
             </select>
             </div>
-            <div class="button">
+            <div class="button" style="margin-top: 10px">
                 <%--<button id="resigerbutton" type="submit"  name="over" value="1" href="index.jps">完成注册</button>--%>
-                <button type="submit" class="btn btn-success" name="over" value="1">完成添加</button>
-                <button type="submit" class="btn btn-default" name="over" value="0" id="send">继续添加</button>
+                <button type="submit" class="btn" style="background-color: #2473ab;color: #fff" name="over" value="1">完成添加</button>
+                <button type="submit" class="btn" style="background-color: #ddd" name="over" value="0" id="send">继续添加</button>
             </div>
         </div>
     </div>

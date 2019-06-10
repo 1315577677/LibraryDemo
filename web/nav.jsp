@@ -36,8 +36,8 @@
             </li>
         </ul>
         <div style="color: white; margin-left: 205px" class="nav-link" float="right">
-            <div style="float: left;padding-top: 14px">
-                <h4><%=reader.getName()%></h4>
+            <div style="float: left;padding:16px 10px 2px">
+                <h6 style="margin:0px"><%=reader.getName()%></h6>
             </div>
             <div style="float:right">
                 <a id="logoutLogo" class="nav-link" href="LoginAction?action=logout"></a>

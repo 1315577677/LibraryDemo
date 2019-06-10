@@ -31,11 +31,11 @@
             <table align="center">
                 <tr>
                     <td id="resiger">
-                        <a style="color:#007bff" href="ReaderResiger.jsp">没有账号？</a>
-                        <a style="color:#007bff" href="chapw.jsp">忘记密码？</a>
+                        <a style="color:#007bff" href="ReaderResiger.jsp">注册</a>
+                        <a style="color:#007bff" href="chapw.jsp">找回密码</a>
                     </td>
                     <td>
-                        <a style="color: gray" href="admin.jsp">我是管理员</a>
+                        <a style="color: gray" href="admin.jsp">管理员登录</a>
                     </td>
                 </tr>
             </table>

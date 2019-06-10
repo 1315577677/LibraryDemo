@@ -8,7 +8,7 @@
 <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 <html>
 <head>
-    <title>书本添加</title>
+    <title>图书添加</title>
 </head>
 <body style="background-image: url(./image/mapBG.jpg)">
 <jsp:include page="nav.html"/>
@@ -18,10 +18,11 @@
         response.sendRedirect("./admin.jsp");
     }
 %>
+<div style="width: 100%">
 <form action="BookAction?action=addtemp" onsubmit="return formcheck()" method="post">
     <div class="bookinfo">
-        <div class="title">
-            <span>请输入书本信息</span>
+        <div class="title"style="text-align: center;color:#4f8fbe;font-family: 幼圆; font-weight: 900; font-size: 35px;">
+            <span>图书添加</span>
         </div>
         <div class="title">
             <span class="infotitle"></span><input name="bookid" class="required" id="bookid" autofocus onkeyup="bookcheck(),this.value=this.value.replace(/\D/g,'')"required placeholder="书本编号" ><span id="bookidcheck" class="error"></span>
@@ -51,11 +52,14 @@
             <span class="infotitle"></span><textarea name="bookdesc" class="required" placeholder="书本详情"></textarea><span id="bookdesccheck" class="error"></span>
         </div>
         <div class="button">
-            <button type="submit" class="btn btn-success" name="over" value="1">完成添加</button>
-            <button type="submit" class="btn btn-default" name="over" value="0" id="send">继续添加</button>
+            <button type="submit" class="btn" style="background-color: #2473ab;color:#fff" name="over" value="1">完成添加</button>
+            <button type="submit" class="btn" style="background-color: #ddd" name="over" value="0" id="send">继续添加</button>
         </div>
     </div>
-</form>
+    </form>
+
+
+</div>
 </body>
 </html>
     

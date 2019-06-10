@@ -1,11 +1,12 @@
 .bookinfo{
     /*border: 1px solid #4e555b;*/
     /*border-radius: 20px;*/
-    padding: 20px;
-    /*margin: 100px auto;*/
+    margin: 10px auto;
     width: 366px;
     font-size: 13px;
     text-align: center;
+    /*好居中了*/
+
 }
 .required{
     height: 40px;

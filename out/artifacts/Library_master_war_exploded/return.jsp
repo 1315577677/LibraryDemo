@@ -24,19 +24,19 @@
         response.sendRedirect("./index.jsp");
     }
 %>
-</body  style=" background-image: url(./image/mapBG.jpg)">
+</body  style=" background-image: url(./image/mapBG.jpg);text-align:center">
 <div class="returninfo">
-    <div class="title">
-        请输入读者用户名
+    <div class="title" style="color:#4f8fbe;font-family: 幼圆; font-weight: 900; font-size: 35px;">
+        图书归还
     </div>
     <form action="ReaderAction?action=GetBorrowListById"  onsubmit="return errorsubmit()" method="post">
         <div>
-            <span class="infotitle">读者用户名：</span><input type="text" autofocus onkeyup="readercheck()" name="readerid"  id="readerid">
+            <input type="text" autofocus onkeyup="readercheck()" style="height: 40px;width: 366px" name="readerid"  id="readerid" placeholder="请输入读者用户名">
             <div id="readeridcheck" class="error" style="text-align: center"></div>
         </div>
-        <div class="button">
-            <button type="submit" class="btn btn-success">提交</button>
-            <button type="reset" class="btn btn-default">重填</button>
+        <div style="margin-top:30px ">
+            <button type="submit" class="btn" style="background-color: #2473ab;color: #fff">提交</button>
+            <button type="reset" class="btn" style="background-color: #ddd">重填</button>
         </div>
     </form>
 </div>

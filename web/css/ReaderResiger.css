@@ -10,7 +10,7 @@
 .required{
     height: 40px;
     margin: 6px 10px;
-    border:1px solid #223852;
+    border:1px solid #e2e4e6;
     border-radius:4px;
     color: #8590A6;
     font-size: 14px;
@@ -57,7 +57,7 @@ textarea{
 
 #addreader{
     width: 400px;
-    margin: 30px auto 0px;
+    margin: 10% auto 0px;
     border-radius: 20px;
     background:hsla(0,0%,100%,.25) border-box ;
     text-shadow: 0 1px 1px hsla(0,0%,100%,.3);

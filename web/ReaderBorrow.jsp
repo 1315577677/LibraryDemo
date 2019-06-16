@@ -23,11 +23,11 @@
 </head>
 <body style="background-image: url(./image/mapBG.jpg)">
 <jsp:include page="nav.jsp"/>
-<div style="height: 41px;padding-top: 10px">
+<div style="height: 59px;padding-top: 8px">
     <div style="height: 40px; float: left;" id="error"><h4></h4></div>
     <div style="width:490px;margin: 0 auto;height: 40px;background-color: white ">
         <form action="ReaderAction?action=ser" method="post">
-            <input style="width:445px;height:40px;border: 0px ;outline: none;" name="bookname" autofocus placeholder="输入书名查询">
+            <input style="width:445px;height:41px;border: 0px ;outline: none;" name="bookname" autofocus placeholder="输入书名查询">
             <input id="search1" type="submit" value=" "/>
         </form>
     </div>

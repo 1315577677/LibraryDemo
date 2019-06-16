@@ -11,34 +11,29 @@
   <component name="ChangeListManager">
     <list default="true" id="29a08502-1f85-44a4-a209-f08956c6ec45" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/AddBook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/AddBook.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/AddReader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/AddReader.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/ReaderBorrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/ReaderBorrow.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/addconfirm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/addconfirm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/borrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/borrow.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/WEB-INF/classes/MySQL/Library.sql" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/WEB-INF/classes/MySQL/Library.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/WEB-INF/classes/com/dbconn/tool/DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/WEB-INF/classes/com/dbconn/tool/DBConnect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/WEB-INF/classes/server/Sendmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/WEB-INF/classes/server/Sendmail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/changepassword.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/changepassword.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/chapw.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/chapw.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/css/ReaderResiger.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/css/ReaderResiger.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/css/addbook.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/css/addbook.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/css/borrow.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/css/borrow.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/css/chapw.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/css/chapw.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/css/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/css/nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/css/returnpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/css/returnpage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/nav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/return.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Library_master_war_exploded/return.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/AddBook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/AddBook.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/AddReader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/AddReader.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MySQL/Library.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/MySQL/Library.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dbconn/tool/DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dbconn/tool/DBConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/Sendmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Sendmail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/ReaderBorrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/ReaderBorrow.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/addconfirm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/addconfirm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/borrow.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/borrow.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/MySQL/Library.sql" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/MySQL/Library.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/dbconn/tool/DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/dbconn/tool/DBConnect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/server/Sendmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/server/Sendmail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/changepassword.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/changepassword.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/chapw.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/chapw.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/ReaderResiger.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/ReaderResiger.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/addbook.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/addbook.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/borrow.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/borrow.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/chapw.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/chapw.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/returnpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/returnpage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/nav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/return.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/return.jsp" afterDir="false" />
     </list>
     <list id="87567b75-ba2d-4f09-8c85-3009792c138e" name="改了一部分还没改完" comment="改了一部分还没改完">
       <changelist_data name="Sumisn" email="50108662+sumisn@users.noreply.github.com" date="1559550150000" />
@@ -95,111 +90,64 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/ReaderResiger.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="111" column="19" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
+            <state relative-caret-position="254">
+              <caret line="109" column="14" lean-forward="true" selection-start-line="109" selection-start-column="14" selection-end-line="109" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/ReaderResiger.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/css/ReaderResiger.css">
+        <entry file="file://$PROJECT_DIR$/src/MySQL/Library.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="-1341" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/chapw.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="543">
+              <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/return.jsp">
+        <entry file="file://$PROJECT_DIR$/src/server/Sendmail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+            <state relative-caret-position="104">
+              <caret line="54" column="132" selection-start-line="54" selection-start-column="78" selection-end-line="54" selection-end-column="132" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/changepassword.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#1;n#form#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#1;n#div#1;n#form#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/returnpage.css">
+        <entry file="file://$PROJECT_DIR$/web/chapw.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/nav.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/nav.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-243">
-              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h6#0;n#div#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#nav#0;n#body#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/AddBook.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="117" selection-start-line="23" selection-start-column="117" selection-end-line="23" selection-end-column="117" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/addbook.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/main.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/nav.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="840">
+              <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="58" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -221,7 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Action/IOAction.java" />
         <option value="$PROJECT_DIR$/web/damin.jsp" />
         <option value="$PROJECT_DIR$/web/main.jsp" />
         <option value="$PROJECT_DIR$/src/server/SendMail.java" />
@@ -233,15 +180,10 @@
         <option value="$PROJECT_DIR$/src/Entity/Reader.java" />
         <option value="9962a6bf-6bdb-46f0-a196-5485f758c5b4/schema/library/table/iolog.sql" />
         <option value="$USER_HOME$/Desktop/library.rtf" />
-        <option value="$PROJECT_DIR$/src/MySQL/Library.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/com/dbconn/entity/DBReader.java" />
-        <option value="$PROJECT_DIR$/src/server/Sendmail.java" />
         <option value="$PROJECT_DIR$/web/ReadMain.jsp" />
         <option value="$PROJECT_DIR$/web/admin.jsp" />
-        <option value="$PROJECT_DIR$/web/css/chapw.css" />
-        <option value="$PROJECT_DIR$/web/changepassword.jsp" />
-        <option value="$PROJECT_DIR$/web/chapw.jsp" />
         <option value="$PROJECT_DIR$/web/error.jsp" />
         <option value="$PROJECT_DIR$/web/edit.jsp" />
         <option value="$PROJECT_DIR$/web/detail.jsp" />
@@ -253,7 +195,6 @@
         <option value="$PROJECT_DIR$/web/booklist.jsp" />
         <option value="$PROJECT_DIR$/web/borrowlist.jsp" />
         <option value="$PROJECT_DIR$/web/IOLog.jsp" />
-        <option value="$PROJECT_DIR$/src/Action/ReaderAction.java" />
         <option value="$PROJECT_DIR$/web/rbooklist.jsp" />
         <option value="$PROJECT_DIR$/web/load.jsp" />
         <option value="$PROJECT_DIR$/web/mailcheck.jsp" />
@@ -263,15 +204,22 @@
         <option value="$PROJECT_DIR$/web/return.jsp" />
         <option value="$PROJECT_DIR$/web/borrow.jsp" />
         <option value="$PROJECT_DIR$/web/css/borrow.css" />
-        <option value="$PROJECT_DIR$/web/ReaderBorrow.jsp" />
-        <option value="$PROJECT_DIR$/web/css/login.css" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/nav.jsp" />
-        <option value="$PROJECT_DIR$/web/css/nav.css" />
         <option value="$PROJECT_DIR$/web/AddBook.jsp" />
         <option value="$PROJECT_DIR$/web/css/addbook.css" />
         <option value="$PROJECT_DIR$/web/css/returnpage.css" />
+        <option value="$PROJECT_DIR$/src/com/dbconn/tool/DBConnect.java" />
+        <option value="$PROJECT_DIR$/web/css/nav.css" />
+        <option value="$PROJECT_DIR$/web/ReaderBorrow.jsp" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/src/Action/ReaderAction.java" />
+        <option value="$PROJECT_DIR$/web/css/login.css" />
+        <option value="$PROJECT_DIR$/web/chapw.jsp" />
+        <option value="$PROJECT_DIR$/web/changepassword.jsp" />
+        <option value="$PROJECT_DIR$/web/css/chapw.css" />
+        <option value="$PROJECT_DIR$/src/server/Sendmail.java" />
         <option value="$PROJECT_DIR$/web/css/ReaderResiger.css" />
+        <option value="$PROJECT_DIR$/src/MySQL/Library.sql" />
       </list>
     </option>
   </component>
@@ -282,8 +230,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="148" />
+    <option name="y" value="32" />
     <option name="width" value="1366" />
     <option name="height" value="745" />
   </component>
@@ -292,6 +241,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -308,12 +258,7 @@
               <item name="Library-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="Library-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Action" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Library-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Library-master" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="MySQL" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Library-master" type="b2602c69:ProjectViewProjectNode" />
@@ -324,14 +269,13 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560175429823" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560665274776" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -341,12 +285,13 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/web/image" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
+      <recent name="$PROJECT_DIR$/web/image" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/MySQL" />
+      <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/web/image" />
     </key>
   </component>
@@ -491,7 +436,9 @@
       <workItem from="1559737103875" duration="4389000" />
       <workItem from="1559744127374" duration="43000" />
       <workItem from="1559825639578" duration="5634000" />
-      <workItem from="1560148478037" duration="19742000" />
+      <workItem from="1560148478037" duration="20108000" />
+      <workItem from="1560181171911" duration="5810000" />
+      <workItem from="1560331181865" duration="1102000" />
     </task>
     <task id="LOCAL-00001" summary="用户激活及修改密码">
       <created>1559224797967</created>
@@ -504,13 +451,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150876000" />
+    <option name="totallyTimeSpent" value="158154000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="0" />
+    <frame x="148" y="32" width="1366" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49885058" visible="true" weight="0.163142" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49885058" visible="true" weight="0.16767372" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -520,8 +467,8 @@
       <window_info id="Web" order="7" sideWeight="0.5011494" side_tool="true" weight="0.30513597" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26647565" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924472" weight="0.41960183" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26647565" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924472" weight="0.41833812" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -545,7 +492,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49885058" visible="true" weight="0.163142" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49885058" weight="0.16540785" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -555,8 +502,8 @@
       <window_info id="Web" order="7" sideWeight="0.5011494" side_tool="true" weight="0.30513597" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2848392" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924472" weight="0.41960183" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26647565" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924472" weight="0.41833812" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -567,7 +514,7 @@
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32808024" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.71056664" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.52578795" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32808024" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -575,7 +522,7 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.05589124" />
+      <window_info anchor="right" id="Database" order="6" weight="0.05589124" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout-to-restore>
@@ -890,6 +837,24 @@
           <properties />
           <option name="timeStamp" value="232" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/dbconn/tool/DBConnect.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/dbconn/tool/DBConnect.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/dbconn/tool/DBConnect.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="235" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/dbconn/entity/DBReader.java</url>
           <line>193</line>
@@ -902,35 +867,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/js/loginScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-465" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/popper.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/read_login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/return.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-582" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/image/LMSLOGO.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/image/bookBG.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -953,13 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="42" column="66" lean-forward="true" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Action/ReaderAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
         </state>
       </provider>
     </entry>
@@ -1012,13 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/IOLog.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/load.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1033,38 +955,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Action/Resiger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dbconn/entity/DBReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="156" selection-start-line="156" selection-end-line="156" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/rbooklist.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/ReadMain.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="48" lean-forward="true" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/changepassword.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="96" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="96" />
         </state>
       </provider>
     </entry>
@@ -1092,32 +986,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/AddReader.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="110" column="28" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#7;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#8;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#8;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#8;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/chapw.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="28" column="98" selection-start-line="28" selection-start-column="98" selection-end-line="28" selection-end-column="98" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1172,37 +1040,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/login.css">
+    <entry file="file://$PROJECT_DIR$/web/return.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1965">
-          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
+        <state relative-caret-position="420">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+    <entry file="file://$PROJECT_DIR$/web/css/returnpage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-183">
-          <caret line="8" column="71" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/ReaderBorrow.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/dbconn/tool/DBConnect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="381">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Action/Resiger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dbconn/entity/DBReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="221" selection-start-line="221" selection-end-line="221" />
         </state>
       </provider>
     </entry>
@@ -1218,84 +1087,155 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/nav.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/nav.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243">
+        <state relative-caret-position="15">
           <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h6#0;n#div#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#nav#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/AddBook.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="326">
           <caret line="23" column="117" selection-start-line="23" selection-start-column="117" selection-end-line="23" selection-end-column="117" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/addbook.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/returnpage.css">
+    <entry file="file://$PROJECT_DIR$/web/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        <state relative-caret-position="312">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/return.jsp">
+    <entry file="file://$PROJECT_DIR$/web/css/nav.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        <state relative-caret-position="116">
+          <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/AddReader.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="75" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#form#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#1;n#form#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ReaderBorrow.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="43" lean-forward="true" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Action/ReaderAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="82" column="44" selection-start-line="82" selection-start-column="44" selection-end-line="82" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="113" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/IOLog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ReadMain.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="21" column="91" lean-forward="true" selection-start-line="21" selection-start-column="91" selection-end-line="21" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="1949" column="1" selection-start-line="1949" selection-start-column="1" selection-end-line="1949" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/chapw.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="58" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/changepassword.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/chapw.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/Sendmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="54" column="132" selection-start-line="54" selection-start-column="78" selection-end-line="54" selection-end-column="132" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/ReaderResiger.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="111" column="19" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
+        <state relative-caret-position="254">
+          <caret line="109" column="14" lean-forward="true" selection-start-line="109" selection-start-column="14" selection-end-line="109" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/ReaderResiger.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="132">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MySQL/Library.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1341" />
       </provider>
     </entry>
   </component>

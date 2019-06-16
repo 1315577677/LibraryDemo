@@ -54,7 +54,10 @@
 <body class="mapBG" >
 
     <div class="loginform1">
-        <h2>找回密码</h2>
+        <div style="padding-top: 20px">
+            <span id="labellogin" style="font-family: 幼圆; font-weight: 900; font-size:28px;">找回密码</span><br>
+        </div>
+
         <div id="insidebox">
 
     <form   action="ReaderAction?action=chapw" method="post" ONSUBMIT="return formcheck()">

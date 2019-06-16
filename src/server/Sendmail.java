@@ -52,7 +52,7 @@ public class Sendmail {
         //邮件的标题
         message.setSubject("CDUESTC在线借还图书系统");
         //邮件的文本内容
-        message.setContent(reader.getName()+"您好！请点击以下链接修改您的账户密码！<br/><a href='http://125.71.198.183:80/Library_master_war_exploded/ReaderAction?action=mailcheck&username="+reader.getUsername()+"&UUID="+reader.getUUID()+"'>http://125.71.198.183:80/Library_master_war_exploded/ReaderAction?action=mailcheck&username="+reader.getUsername()+"&UUID="+reader.getUUID()+"</a>", "text/html;charset=UTF-8");
+        message.setContent(reader.getName()+"您好！请点击以下链接修改您的账户密码！<br/><a href='http://182.148.167.155:80/Library_master_war_exploded/ReaderAction?action=mailcheck&username="+reader.getUsername()+"&UUID="+reader.getUUID()+"'>http://125.71.198.183:80/Library_master_war_exploded/ReaderAction?action=mailcheck&username="+reader.getUsername()+"&UUID="+reader.getUUID()+"</a>", "text/html;charset=UTF-8");
         //返回创建好的邮件对象
         return message;
     }
@@ -68,7 +68,7 @@ public class Sendmail {
         //邮件的标题
         message.setSubject("CDUESTC在线借还图书系统");
         //邮件的文本内容
-        message.setContent(reader.getName()+"您好！请点击以下链接激活您的账户，如不是本人操作请忽略本条消息！<br/><a href='http://125.71.198.183:80/Library_master_war_exploded/Resiger?action=mailcheck&username="+reader.getUsername()+"&UUID="+reader.getUUID()+"'>http://125.71.198.183:80/Library_master_war_exploded/Resiger?action=mailcheck&username="+reader.getUsername()+"&UUID="+reader.getUUID()+"</a>", "text/html;charset=UTF-8");
+        message.setContent(reader.getName()+"您好！请点击以下链接激活您的账户，如不是本人操作请忽略本条消息！<br/><a href='http://182.148.167.155:80/Library_master_war_exploded/Resiger?action=mailcheck&username="+reader.getUsername()+"&UUID="+reader.getUUID()+"'>http://125.71.198.183:80/Library_master_war_exploded/Resiger?action=mailcheck&username="+reader.getUsername()+"&UUID="+reader.getUUID()+"</a>", "text/html;charset=UTF-8");
         //返回创建好的邮件对象
         return message;
     }

@@ -57,7 +57,9 @@
 <body class="mapBG" >
 
 <div class="loginform1">
-    <h2>修改密码</h2>
+    <div style="padding-top: 20px">
+        <span id="labellogin" style="font-family: 幼圆; font-weight: 900; font-size:28px;">修改密码</span><br>
+    </div>
     <div id="insidebox">
 
         <form   action="ReaderAction?action=changepassword&UUID=<%=reader.getUUID()%>" method="post" ONSUBMIT="return formcheck()">

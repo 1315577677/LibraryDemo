@@ -61,8 +61,8 @@
         <span class="infotitle">书本详情：</span><span class="info"><%=book.getDesc()%></span>
     </div>
     <div class="button">
-        <a href="BookAction?action=querybookbyid&id=<%=book.getId()%>&next=edit"><button type="button" class="btn btn-default">编辑信息</button></a>
-        <a href="BookAction?action=getall"><button type="button" class="btn btn-info">返回总表</button></a>
+        <a href="BookAction?action=querybookbyid&id=<%=book.getId()%>&next=edit"><button type="button" class="btn style="background-color: #2473ab;color: #fff">编辑信息</button></a>
+        <a href="BookAction?action=getall"><button type="button" class="btn style="background-color: #ddd">返回总表</button></a>
     </div>
 </div>
 </body>

@@ -73,7 +73,7 @@
         <div class="button">
             <button type="submit" class="btn" style="background-color: #2473ab;color: #fff" name="over" value="1">提交</button>
             <button type="reset" class="btn" style="background-color: #ddd">重填</button>
-            <button type="submit" class="btn" style="background-color: #ddd" name="over" value="0" id="send">继续借书</button>
+            <button type="submit" class="btn btn-info" name="over" value="0" id="send">继续借书</button>
         </div>
     </form>
 </div>

@@ -107,10 +107,10 @@
 </head>
 <body style="background-image: url(./image/mapBG.jpg)">
 <form action="ReaderAction?action=addreader"  onsubmit="return formcheck()" method="post">
-    <div id="addreader">
+    <div id="addreader" style="margin:4% auto 10px">
         <div class="bookinfo">
-            <div class="size" style="text-align: center;color:#4f8fbe;font-family: 幼圆; font-weight: 900; font-size: 35px;padding-top: 20px;padding-bottom: 20px">
-                读者注册
+            <div class="size" style="text-align: center;color:#4f8fbe;font-family: 幼圆; font-weight: 900; font-size: 35px;padding-top: 0px;padding-bottom: 20px">
+                增添读者
             </div>
             <div class="size">
                 <span class="infotitle"></span><input name="username" class="required" autofocus id="username" onkeyup="readercheck()"  onblur="checkusernameleng()" placeholder="用户名：6-20个字母、数字、下划线" ><span class="error" id="usernamecheck"></span>
